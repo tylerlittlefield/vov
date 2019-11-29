@@ -6,6 +6,9 @@
 \usage{
 slide_in_left(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Slide in left
 }

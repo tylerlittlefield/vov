@@ -6,6 +6,9 @@
 \usage{
 throb(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Throb
 }

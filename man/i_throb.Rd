@@ -6,6 +6,9 @@
 \usage{
 i_throb(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 I-Throb
 }

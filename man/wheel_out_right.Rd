@@ -6,6 +6,9 @@
 \usage{
 wheel_out_right(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Wheel out right
 }

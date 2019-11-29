@@ -6,6 +6,9 @@
 \usage{
 wheel_in_right(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Wheel in right
 }

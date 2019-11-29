@@ -6,6 +6,9 @@
 \usage{
 fade_out_left(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Fade out left
 }

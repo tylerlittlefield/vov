@@ -6,6 +6,9 @@
 \usage{
 fade_in_bottom_right(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Fade in bottom right
 }

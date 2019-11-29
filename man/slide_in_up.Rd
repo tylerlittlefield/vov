@@ -6,6 +6,9 @@
 \usage{
 slide_in_up(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Slide in up
 }

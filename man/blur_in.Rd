@@ -6,6 +6,9 @@
 \usage{
 blur_in(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Blur in
 }

@@ -6,6 +6,9 @@
 \usage{
 slide_out_down(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Slide out down
 }

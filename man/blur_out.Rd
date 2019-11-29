@@ -6,6 +6,9 @@
 \usage{
 blur_out(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Blur out
 }

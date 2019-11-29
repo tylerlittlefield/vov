@@ -6,6 +6,9 @@
 \usage{
 roll_in_right(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Roll in right
 }

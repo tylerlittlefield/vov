@@ -6,6 +6,9 @@
 \usage{
 fade_in_top_left(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Fade in top left
 }

@@ -15,7 +15,7 @@ The goal of vov is to wrap
 [vov.css](https://github.com/vaibhav111tandon/vov.css) into functions so
 they can be called on when developing a shiny application.
 
-<img src="inst/extdata/demo.gif" width="100%" />
+<img src="inst/extdata/demo-min.gif" width="100%" />
 
 ## Installation
 
@@ -56,19 +56,10 @@ print(x)
 #> </div>
 ```
 
-If you don’t want to load this package, you can just do something like:
+If you don’t want to load this package, you can just do something like
+this:
 
 ``` r
-# includeCSS("www/vov.css")
-x <- tags$div(h1("hello world"), class = "vov swivel-vertical")
-print(x)
-#> <div class="vov swivel-vertical">
-#>   <h1>hello world</h1>
-#> </div>
-```
-
-You can run a local copy of the demo app using:
-
-``` r
-shiny::runApp(system.file("extdata", "app.R", package = "vov"))
+includeCSS("www/vov.css")
+tags$div(h1("hello world"), class = "vov swivel-vertical")
 ```

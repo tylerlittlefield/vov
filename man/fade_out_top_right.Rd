@@ -6,6 +6,9 @@
 \usage{
 fade_out_top_right(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Fade out top right
 }

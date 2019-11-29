@@ -6,6 +6,9 @@
 \usage{
 swivel_vertical(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Swivel vertical
 }

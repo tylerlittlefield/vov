@@ -6,6 +6,9 @@
 \usage{
 flash(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Flash
 }

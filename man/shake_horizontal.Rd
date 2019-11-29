@@ -6,6 +6,9 @@
 \usage{
 shake_horizontal(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Shake horizontal
 }

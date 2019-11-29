@@ -6,6 +6,9 @@
 \usage{
 roll_out_left(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Roll out left
 }

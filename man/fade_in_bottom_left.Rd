@@ -6,6 +6,9 @@
 \usage{
 fade_in_bottom_left(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Fade in bottom left
 }

@@ -6,6 +6,9 @@
 \usage{
 swivel_vertical_double(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Swivel vertical double
 }

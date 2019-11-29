@@ -23,9 +23,8 @@ knitr::opts_chunk$set(
 The goal of vov is to wrap [vov.css](https://github.com/vaibhav111tandon/vov.css) into functions so they can be called on when developing a shiny application.
 
 ```{r, echo=FALSE}
-knitr::include_graphics("inst/extdata/demo.gif")
+knitr::include_graphics("inst/extdata/demo-min.gif")
 ```
-
 
 ## Installation
 
@@ -68,17 +67,9 @@ x <- swivel_vertical(h1("hello world!"))
 print(x)
 ```
 
-If you don't want to load this package, you can just do something like:
-
-```{r}
-# includeCSS("www/vov.css")
-x <- tags$div(h1("hello world"), class = "vov swivel-vertical")
-print(x)
-```
-
-You can run a local copy of the demo app using:
+If you don't want to load this package, you can just do something like this:
 
 ```{r, eval=FALSE}
-shiny::runApp(system.file("extdata", "app.R", package = "vov"))
+includeCSS("www/vov.css")
+tags$div(h1("hello world"), class = "vov swivel-vertical")
 ```
-

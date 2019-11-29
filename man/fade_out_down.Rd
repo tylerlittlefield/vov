@@ -6,6 +6,9 @@
 \usage{
 fade_out_down(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Fade out down
 }

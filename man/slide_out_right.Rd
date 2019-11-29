@@ -6,6 +6,9 @@
 \usage{
 slide_out_right(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Slide out right
 }

@@ -13,3 +13,5 @@ LazyData: true
 RoxygenNote: 6.1.1
 URL: https://github.com/tyluRp/vov
 BugReports: https://github.com/tyluRp/vov/issues
+Imports: 
+    shiny

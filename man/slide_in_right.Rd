@@ -6,6 +6,9 @@
 \usage{
 slide_in_right(...)
 }
+\arguments{
+\item{...}{A UI element}
+}
 \description{
 Slide in right
 }

@@ -1,11 +1,7 @@
 Package: vov
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "Tyler",
-           family = "Littlefield",
-           role = c("aut", "cre"),
-           email = "tylurp1@gmail.com")
+Authors@R: c(person("Tyler","Littlefield",email="tylurp1@gmail.com",role=c("aut","cre"),comment="Creator of Shiny-wrapper code"),person("Vaibhav","Tandon",role=c("ctb","cph"),comment="Author of included CSS code"))
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8

@@ -15,7 +15,8 @@ The goal of vov is to wrap
 [vov.css](https://github.com/vaibhav111tandon/vov.css) into functions so
 they can be called on when developing a shiny application. Try out the
 demo [here](https://tylerlittlefield.com/shiny/tyler/vov/) or check out
-the original [here](https://vaibhav111tandon.github.io/vov.css/).
+the original [here](https://vaibhav111tandon.github.io/vov.css/) by
+Vaibhav Tandon.
 
 <img src="inst/extdata/demo.gif" width="100%" />
 

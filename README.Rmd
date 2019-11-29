@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/tyluRp/vov?branch=master&svg=true)](https://ci.appveyor.com/project/tyluRp/vov)
 <!-- badges: end -->
 
-The goal of vov is to wrap [vov.css](https://github.com/vaibhav111tandon/vov.css) into functions so they can be called on when developing a shiny application. Try out the demo [here](https://tylerlittlefield.com/shiny/tyler/vov/) or check out the original [here](https://vaibhav111tandon.github.io/vov.css/).
+The goal of vov is to wrap [vov.css](https://github.com/vaibhav111tandon/vov.css) into functions so they can be called on when developing a shiny application. Try out the demo [here](https://tylerlittlefield.com/shiny/tyler/vov/) or check out the original [here](https://vaibhav111tandon.github.io/vov.css/) by Vaibhav Tandon.
 
 ```{r, echo=FALSE}
 knitr::include_graphics("inst/extdata/demo.gif")

@@ -11,11 +11,11 @@ status](https://travis-ci.org/tyluRp/vov.svg?branch=master)](https://travis-ci.o
 status](https://ci.appveyor.com/api/projects/status/github/tyluRp/vov?branch=master&svg=true)](https://ci.appveyor.com/project/tyluRp/vov)
 <!-- badges: end -->
 
+<img src="inst/extdata/demo.gif" width="100%" />
+
 The goal of vov is to wrap
 [vov.css](https://github.com/vaibhav111tandon/vov.css) into functions so
 they can be called on when developing a shiny application.
-
-<img src="inst/extdata/demo.gif" width="100%" />
 
 ## Installation
 

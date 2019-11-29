@@ -67,7 +67,7 @@ x <- swivel_vertical(h1("hello world!"))
 print(x)
 ```
 
-If you don't want to load this package, you can just do something like this:
+If you don't want to load this package, go to the original repo [here](https://github.com/vaibhav111tandon/vov.css), download the CSS file, and write something like this in your UI code:
 
 ```{r, eval=FALSE}
 includeCSS("www/vov.css")

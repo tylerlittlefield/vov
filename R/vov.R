@@ -1,3 +1,5 @@
+#' Use the vov package
+#' @export
 use_vov <- function() {
   css <- system.file("extdata", "vov.css", package = "vov")
   shiny::includeCSS(css)
@@ -210,13 +212,13 @@ slide_out_up <- function(...) {
 #' Throb
 #' @export
 throb <- function(...) {
-  shiny::tags$div(..., class = "vov thob")
+  shiny::tags$div(..., class = "vov throb")
 }
 
 #' I-Throb
 #' @export
 i_throb <- function(...) {
-  shiny::tags$div(..., class = "vov i-thob")
+  shiny::tags$div(..., class = "vov i-throb")
 }
 
 #' Swivel horizontal

@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 The goal of vov is to wrap [vov.css](https://github.com/vaibhav111tandon/vov.css) into functions so they can be called on when developing a shiny application.
 
 ```{r, echo=FALSE}
-knitr::include_graphics("inst/extdata/demo-min.gif")
+knitr::include_graphics("inst/extdata/demo.gif")
 ```
 
 ## Installation

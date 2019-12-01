@@ -40,7 +40,9 @@ library(vov)
 
 ui <- fluidPage(
   use_vov(),
-  swivel_vertical(h1("fade_in_bottom_left"))
+  swivel_vertical(
+    h1("hello world!")
+  )
 )
 
 server <- function(input, output, session) {

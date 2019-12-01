@@ -10,5 +10,5 @@ fade_in_right(...)
 \item{...}{A UI element}
 }
 \description{
-Fade in right
+Animation to fade in a UI element from the right.
 }

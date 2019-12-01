@@ -10,5 +10,5 @@ swivel_vertical_double(...)
 \item{...}{A UI element}
 }
 \description{
-Swivel vertical double
+Animation to swivel a UI element vetically, twice.
 }

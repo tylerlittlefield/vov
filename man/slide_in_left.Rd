@@ -10,5 +10,5 @@ slide_in_left(...)
 \item{...}{A UI element}
 }
 \description{
-Slide in left
+Animation to slide in a UI element from the left.
 }

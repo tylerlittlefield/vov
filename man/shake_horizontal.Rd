@@ -10,5 +10,5 @@ shake_horizontal(...)
 \item{...}{A UI element}
 }
 \description{
-Shake horizontal
+Animation to shake a UI element horizontally.
 }

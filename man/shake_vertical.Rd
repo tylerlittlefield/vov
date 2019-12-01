@@ -10,5 +10,5 @@ shake_vertical(...)
 \item{...}{A UI element}
 }
 \description{
-Shake vertical
+Animation to shake a UI element vertically.
 }

@@ -10,5 +10,6 @@ fade_out_bottom_left(...)
 \item{...}{A UI element}
 }
 \description{
-Fade out bottom left
+Animation to fade out (disappear) a UI element from the
+bottom left.
 }

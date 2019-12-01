@@ -10,5 +10,5 @@ blur_in(...)
 \item{...}{A UI element}
 }
 \description{
-Blur in
+Animation to blur in a UI element.
 }

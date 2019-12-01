@@ -1,4 +1,8 @@
 #' Use the vov package
+#'
+#' @description Enables vov by including the CSS file necessary for the
+#' animations.
+#'
 #' @export
 use_vov <- function() {
   css <- system.file("extdata", "vov.css", package = "vov")
@@ -6,12 +10,19 @@ use_vov <- function() {
 }
 
 #' Run a demo application
+#'
+#' @description Run a demo version of the app to try out all the animations.
+#' Please note that the \code{emo} package is required for the emoji.
+#'
 #' @export
 run_demo <- function() {
   shiny::runApp(system.file("extdata", "app.R", package = "vov"))
 }
 
 #' Fade in bottom left
+#'
+#' @description Animation to fade in a UI element from the bottom left.
+#'
 #' @param ... A UI element
 #' @export
 fade_in_bottom_left <- function(...) {
@@ -19,6 +30,9 @@ fade_in_bottom_left <- function(...) {
 }
 
 #' Fade in bottom right
+#'
+#' @description Animation to fade in a UI element from the bottom right.
+#'
 #' @param ... A UI element
 #' @export
 fade_in_bottom_right <- function(...) {
@@ -26,6 +40,9 @@ fade_in_bottom_right <- function(...) {
 }
 
 #' Fade in down
+#'
+#' @description Animation to fade in a UI element downward.
+#'
 #' @param ... A UI element
 #' @export
 fade_in_down <- function(...) {
@@ -33,6 +50,9 @@ fade_in_down <- function(...) {
 }
 
 #' Fade in left
+#'
+#' @description Animation to fade in a UI element from the left.
+#'
 #' @param ... A UI element
 #' @export
 fade_in_left <- function(...) {
@@ -40,6 +60,9 @@ fade_in_left <- function(...) {
 }
 
 #' Fade in right
+#'
+#' @description Animation to fade in a UI element from the right.
+#'
 #' @param ... A UI element
 #' @export
 fade_in_right <- function(...) {
@@ -47,6 +70,9 @@ fade_in_right <- function(...) {
 }
 
 #' Fade in top left
+#'
+#' @description Animation to fade in a UI element from the top left.
+#'
 #' @param ... A UI element
 #' @export
 fade_in_top_left <- function(...) {
@@ -54,6 +80,9 @@ fade_in_top_left <- function(...) {
 }
 
 #' Fade in top right
+#'
+#' @description Animation to fade in a UI element from the top right.
+#'
 #' @param ... A UI element
 #' @export
 fade_in_top_right <- function(...) {
@@ -61,6 +90,9 @@ fade_in_top_right <- function(...) {
 }
 
 #' Fade in up
+#'
+#' @description Animation to fade in a UI element upward.
+#'
 #' @param ... A UI element
 #' @export
 fade_in_up <- function(...) {
@@ -68,6 +100,9 @@ fade_in_up <- function(...) {
 }
 
 #' Fade in
+#'
+#' @description Animation to fade in a UI element.
+#'
 #' @param ... A UI element
 #' @export
 fade_in <- function(...) {
@@ -75,6 +110,10 @@ fade_in <- function(...) {
 }
 
 #' Fade out bottom left
+#'
+#' @description Animation to fade out (disappear) a UI element from the
+#' bottom left.
+#'
 #' @param ... A UI element
 #' @export
 fade_out_bottom_left <- function(...) {
@@ -82,6 +121,10 @@ fade_out_bottom_left <- function(...) {
 }
 
 #' Fade out bottom right
+#'
+#' @description Animation to fade out (disappear) a UI element from the
+#' bottom right
+#'
 #' @param ... A UI element
 #' @export
 fade_out_bottom_right <- function(...) {
@@ -89,6 +132,9 @@ fade_out_bottom_right <- function(...) {
 }
 
 #' Fade out down
+#'
+#' @description Animation to fade out (disappear) a UI element downward.
+#'
 #' @param ... A UI element
 #' @export
 fade_out_down <- function(...) {
@@ -96,6 +142,9 @@ fade_out_down <- function(...) {
 }
 
 #' Fade out left
+#'
+#' @description Animation to fade out (disappear) a UI element from the left.
+#'
 #' @param ... A UI element
 #' @export
 fade_out_left <- function(...) {
@@ -103,6 +152,9 @@ fade_out_left <- function(...) {
 }
 
 #' Fade out right
+#'
+#' @description Animation to fade out (disappear) a UI element from the right.
+#'
 #' @param ... A UI element
 #' @export
 fade_out_right <- function(...) {
@@ -110,6 +162,10 @@ fade_out_right <- function(...) {
 }
 
 #' Fade out top left
+#'
+#' @description Animation to fade out (disappear) a UI element from the top
+#' left.
+#'
 #' @param ... A UI element
 #' @export
 fade_out_top_left <- function(...) {
@@ -117,6 +173,10 @@ fade_out_top_left <- function(...) {
 }
 
 #' Fade out top right
+#'
+#' @description Animation to fade out (disappear) a UI element from the top
+#' right.
+#'
 #' @param ... A UI element
 #' @export
 fade_out_top_right <- function(...) {
@@ -124,6 +184,9 @@ fade_out_top_right <- function(...) {
 }
 
 #' Fade out up
+#'
+#' @description Animation to fade out (disappear) a UI element upwards.
+#'
 #' @param ... A UI element
 #' @export
 fade_out_up <- function(...) {
@@ -131,6 +194,9 @@ fade_out_up <- function(...) {
 }
 
 #' Fade out
+#'
+#' @description Animation to fade out (disappear) a UI element.
+#'
 #' @param ... A UI element
 #' @export
 fade_out <- function(...) {
@@ -138,6 +204,9 @@ fade_out <- function(...) {
 }
 
 #' Roll in left
+#'
+#' @description Animation to roll in a UI element from the left.
+#'
 #' @param ... A UI element
 #' @export
 roll_in_left <- function(...) {
@@ -145,6 +214,9 @@ roll_in_left <- function(...) {
 }
 
 #' Roll in right
+#'
+#' @description Animation to roll in a UI element from the right.
+#'
 #' @param ... A UI element
 #' @export
 roll_in_right <- function(...) {
@@ -152,6 +224,9 @@ roll_in_right <- function(...) {
 }
 
 #' Roll out left
+#'
+#' @description Animation to roll out (disappear) a UI element from the left.
+#'
 #' @param ... A UI element
 #' @export
 roll_out_left <- function(...) {
@@ -159,6 +234,9 @@ roll_out_left <- function(...) {
 }
 
 #' Roll out right
+#'
+#' @description Animation to roll out (disappear) a UI element from the right.
+#'
 #' @param ... A UI element
 #' @export
 roll_out_right <- function(...) {
@@ -166,6 +244,9 @@ roll_out_right <- function(...) {
 }
 
 #' Shake vertical
+#'
+#' @description Animation to shake a UI element vertically.
+#'
 #' @param ... A UI element
 #' @export
 shake_vertical <- function(...) {
@@ -173,6 +254,9 @@ shake_vertical <- function(...) {
 }
 
 #' Shake horizontal
+#'
+#' @description Animation to shake a UI element horizontally.
+#'
 #' @param ... A UI element
 #' @export
 shake_horizontal <- function(...) {
@@ -180,6 +264,9 @@ shake_horizontal <- function(...) {
 }
 
 #' Blur in
+#'
+#' @description Animation to blur in a UI element.
+#'
 #' @param ... A UI element
 #' @export
 blur_in <- function(...) {
@@ -187,6 +274,9 @@ blur_in <- function(...) {
 }
 
 #' Blur out
+#'
+#' @description Animation to blur out (disappear) a UI element.
+#'
 #' @param ... A UI element
 #' @export
 blur_out <- function(...) {
@@ -194,6 +284,9 @@ blur_out <- function(...) {
 }
 
 #' Slide in down
+#'
+#' @description Animation to slide in a UI element downward.
+#'
 #' @param ... A UI element
 #' @export
 slide_in_down <- function(...) {
@@ -201,6 +294,9 @@ slide_in_down <- function(...) {
 }
 
 #' Slide in left
+#'
+#' @description Animation to slide in a UI element from the left.
+#'
 #' @param ... A UI element
 #' @export
 slide_in_left <- function(...) {
@@ -208,6 +304,9 @@ slide_in_left <- function(...) {
 }
 
 #' Slide in right
+#'
+#' @description Animation to slide in a UI element from the right.
+#'
 #' @param ... A UI element
 #' @export
 slide_in_right <- function(...) {
@@ -215,6 +314,9 @@ slide_in_right <- function(...) {
 }
 
 #' Slide in up
+#'
+#' @description Animation to slide in a UI element upward.
+#'
 #' @param ... A UI element
 #' @export
 slide_in_up <- function(...) {
@@ -222,6 +324,9 @@ slide_in_up <- function(...) {
 }
 
 #' Slide out down
+#'
+#' @description Animation to slide in a UI element downward.
+#'
 #' @param ... A UI element
 #' @export
 slide_out_down <- function(...) {
@@ -229,6 +334,9 @@ slide_out_down <- function(...) {
 }
 
 #' Slide out left
+#'
+#' @description Animation to slide out (disappear) a UI element from the left.
+#'
 #' @param ... A UI element
 #' @export
 slide_out_left <- function(...) {
@@ -236,6 +344,9 @@ slide_out_left <- function(...) {
 }
 
 #' Slide out right
+#'
+#' @description Animation to slide out (disappear) a UI element from the right.
+#'
 #' @param ... A UI element
 #' @export
 slide_out_right <- function(...) {
@@ -243,6 +354,9 @@ slide_out_right <- function(...) {
 }
 
 #' Slide out up
+#'
+#' @description Animation to slide out (disappear) a UI element upward.
+#'
 #' @param ... A UI element
 #' @export
 slide_out_up <- function(...) {
@@ -250,6 +364,9 @@ slide_out_up <- function(...) {
 }
 
 #' Throb
+#'
+#' @description Animation to throb a UI element outward.
+#'
 #' @param ... A UI element
 #' @export
 throb <- function(...) {
@@ -257,6 +374,9 @@ throb <- function(...) {
 }
 
 #' I-Throb
+#'
+#' @description Animation to throb a UI element inward.
+#'
 #' @param ... A UI element
 #' @export
 i_throb <- function(...) {
@@ -264,6 +384,9 @@ i_throb <- function(...) {
 }
 
 #' Swivel horizontal
+#'
+#' @description Animation to swivel a UI element horizontally.
+#'
 #' @param ... A UI element
 #' @export
 swivel_horizontal <- function(...) {
@@ -271,6 +394,9 @@ swivel_horizontal <- function(...) {
 }
 
 #' Swivel horizontal double
+#'
+#' @description Animation to swivel a UI element horizontally, twice.
+#'
 #' @param ... A UI element
 #' @export
 swivel_horizontal_double <- function(...) {
@@ -278,6 +404,9 @@ swivel_horizontal_double <- function(...) {
 }
 
 #' Swivel vertical
+#'
+#' @description Animation to swivel a UI element vertically.
+#'
 #' @param ... A UI element
 #' @export
 swivel_vertical <- function(...) {
@@ -285,6 +414,9 @@ swivel_vertical <- function(...) {
 }
 
 #' Swivel vertical double
+#'
+#' @description Animation to swivel a UI element vetically, twice.
+#'
 #' @param ... A UI element
 #' @export
 swivel_vertical_double <- function(...) {
@@ -292,6 +424,9 @@ swivel_vertical_double <- function(...) {
 }
 
 #' Wheel in left
+#'
+#' @description Animation to wheel in a UI element from the left.
+#'
 #' @param ... A UI element
 #' @export
 wheel_in_left <- function(...) {
@@ -299,6 +434,9 @@ wheel_in_left <- function(...) {
 }
 
 #' Wheel in right
+#'
+#' @description Animation to wheel in a UI element from the right.
+#'
 #' @param ... A UI element
 #' @export
 wheel_in_right <- function(...) {
@@ -306,6 +444,9 @@ wheel_in_right <- function(...) {
 }
 
 #' Wheel out left
+#'
+#' @description Animation to wheel out (disappear) a UI element from the left.
+#'
 #' @param ... A UI element
 #' @export
 wheel_out_left <- function(...) {
@@ -313,6 +454,9 @@ wheel_out_left <- function(...) {
 }
 
 #' Wheel out right
+#'
+#' @description Animation to wheel out (disappear) a UI element from the right.
+#'
 #' @param ... A UI element
 #' @export
 wheel_out_right <- function(...) {
@@ -320,6 +464,9 @@ wheel_out_right <- function(...) {
 }
 
 #' Flash
+#'
+#' @description Animation to flash a UI element.
+#'
 #' @param ... A UI element
 #' @export
 flash <- function(...) {

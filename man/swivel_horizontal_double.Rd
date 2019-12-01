@@ -10,5 +10,5 @@ swivel_horizontal_double(...)
 \item{...}{A UI element}
 }
 \description{
-Swivel horizontal double
+Animation to swivel a UI element horizontally, twice.
 }

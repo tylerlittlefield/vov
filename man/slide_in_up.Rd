@@ -10,5 +10,5 @@ slide_in_up(...)
 \item{...}{A UI element}
 }
 \description{
-Slide in up
+Animation to slide in a UI element upward.
 }

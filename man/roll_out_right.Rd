@@ -10,5 +10,5 @@ roll_out_right(...)
 \item{...}{A UI element}
 }
 \description{
-Roll out right
+Animation to roll out (disappear) a UI element from the right.
 }

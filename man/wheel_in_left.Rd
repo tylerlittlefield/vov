@@ -10,5 +10,5 @@ wheel_in_left(...)
 \item{...}{A UI element}
 }
 \description{
-Wheel in left
+Animation to wheel in a UI element from the left.
 }

@@ -10,5 +10,5 @@ roll_out_left(...)
 \item{...}{A UI element}
 }
 \description{
-Roll out left
+Animation to roll out (disappear) a UI element from the left.
 }

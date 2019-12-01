@@ -10,5 +10,5 @@ slide_out_up(...)
 \item{...}{A UI element}
 }
 \description{
-Slide out up
+Animation to slide out (disappear) a UI element upward.
 }

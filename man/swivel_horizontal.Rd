@@ -10,5 +10,5 @@ swivel_horizontal(...)
 \item{...}{A UI element}
 }
 \description{
-Swivel horizontal
+Animation to swivel a UI element horizontally.
 }

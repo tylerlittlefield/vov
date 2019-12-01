@@ -10,5 +10,5 @@ fade_out(...)
 \item{...}{A UI element}
 }
 \description{
-Fade out
+Animation to fade out (disappear) a UI element.
 }

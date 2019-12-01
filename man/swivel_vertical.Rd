@@ -10,5 +10,5 @@ swivel_vertical(...)
 \item{...}{A UI element}
 }
 \description{
-Swivel vertical
+Animation to swivel a UI element vertically.
 }

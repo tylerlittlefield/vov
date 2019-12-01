@@ -10,5 +10,5 @@ slide_out_left(...)
 \item{...}{A UI element}
 }
 \description{
-Slide out left
+Animation to slide out (disappear) a UI element from the left.
 }

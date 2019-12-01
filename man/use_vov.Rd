@@ -7,5 +7,6 @@
 use_vov()
 }
 \description{
-Use the vov package
+Enables vov by including the CSS file necessary for the
+animations.
 }

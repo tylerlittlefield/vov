@@ -10,5 +10,5 @@ i_throb(...)
 \item{...}{A UI element}
 }
 \description{
-I-Throb
+Animation to throb a UI element inward.
 }

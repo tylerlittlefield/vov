@@ -10,5 +10,5 @@ roll_in_right(...)
 \item{...}{A UI element}
 }
 \description{
-Roll in right
+Animation to roll in a UI element from the right.
 }

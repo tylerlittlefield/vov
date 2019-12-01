@@ -10,5 +10,5 @@ fade_in_top_left(...)
 \item{...}{A UI element}
 }
 \description{
-Fade in top left
+Animation to fade in a UI element from the top left.
 }

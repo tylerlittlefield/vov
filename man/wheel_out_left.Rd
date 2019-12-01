@@ -10,5 +10,5 @@ wheel_out_left(...)
 \item{...}{A UI element}
 }
 \description{
-Wheel out left
+Animation to wheel out (disappear) a UI element from the left.
 }

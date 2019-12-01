@@ -10,5 +10,5 @@ throb(...)
 \item{...}{A UI element}
 }
 \description{
-Throb
+Animation to throb a UI element outward.
 }

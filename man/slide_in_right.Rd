@@ -10,5 +10,5 @@ slide_in_right(...)
 \item{...}{A UI element}
 }
 \description{
-Slide in right
+Animation to slide in a UI element from the right.
 }

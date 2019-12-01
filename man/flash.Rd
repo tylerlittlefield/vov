@@ -10,5 +10,5 @@ flash(...)
 \item{...}{A UI element}
 }
 \description{
-Flash
+Animation to flash a UI element.
 }

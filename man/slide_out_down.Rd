@@ -10,5 +10,5 @@ slide_out_down(...)
 \item{...}{A UI element}
 }
 \description{
-Slide out down
+Animation to slide in a UI element downward.
 }

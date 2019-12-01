@@ -10,5 +10,5 @@ fade_in_up(...)
 \item{...}{A UI element}
 }
 \description{
-Fade in up
+Animation to fade in a UI element upward.
 }

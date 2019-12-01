@@ -10,5 +10,5 @@ blur_out(...)
 \item{...}{A UI element}
 }
 \description{
-Blur out
+Animation to blur out (disappear) a UI element.
 }

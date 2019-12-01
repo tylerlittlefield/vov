@@ -8,5 +8,4 @@ run_demo()
 }
 \description{
 Run a demo version of the app to try out all the animations.
-Please note that the \code{emo} package is required for the emoji.
 }

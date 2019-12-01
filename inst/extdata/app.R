@@ -61,7 +61,7 @@ server <- function(input, output, session) {
 
     h1(
       lapply(
-        paste(emo::ji("wave"), "Hello world!"),
+        "\U0001f44b Hello world!",
         input$animation,
         duration = duration,
         delay = input$delay

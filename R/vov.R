@@ -5,6 +5,12 @@ use_vov <- function() {
   shiny::includeCSS(css)
 }
 
+#' Run a demo application
+#' @export
+run_demo <- function() {
+  shiny::runApp(system.file("extdata", "app.R", package = "vov"))
+}
+
 #' Fade in bottom left
 #' @param ... A UI element
 #' @export

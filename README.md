@@ -19,7 +19,7 @@ the original [here](https://vaibhav111tandon.github.io/vov.css/) by
 Vaibhav Tandon. Alternatively, you can run a local copy with
 `vov::run_demo()`.
 
-<img src="/Library/Frameworks/R.framework/Versions/3.6/Resources/library/vov/extdata/demo.gif" width="100%" />
+<img src="man/figures/README-demo.gif" width="100%" />
 
 ## Installation
 

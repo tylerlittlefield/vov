@@ -4,10 +4,15 @@
 \alias{slide_out_left}
 \title{Slide out left}
 \usage{
-slide_out_left(...)
+slide_out_left(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to slide out (disappear) a UI element from the left.

@@ -4,10 +4,15 @@
 \alias{fade_in_down}
 \title{Fade in down}
 \usage{
-fade_in_down(...)
+fade_in_down(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to fade in a UI element downward.

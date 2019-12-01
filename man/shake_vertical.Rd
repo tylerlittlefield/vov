@@ -4,10 +4,15 @@
 \alias{shake_vertical}
 \title{Shake vertical}
 \usage{
-shake_vertical(...)
+shake_vertical(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to shake a UI element vertically.

@@ -4,10 +4,15 @@
 \alias{fade_out_right}
 \title{Fade out right}
 \usage{
-fade_out_right(...)
+fade_out_right(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to fade out (disappear) a UI element from the right.

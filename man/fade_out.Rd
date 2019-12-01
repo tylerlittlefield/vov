@@ -4,10 +4,15 @@
 \alias{fade_out}
 \title{Fade out}
 \usage{
-fade_out(...)
+fade_out(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to fade out (disappear) a UI element.

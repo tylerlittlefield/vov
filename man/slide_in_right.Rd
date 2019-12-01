@@ -4,10 +4,15 @@
 \alias{slide_in_right}
 \title{Slide in right}
 \usage{
-slide_in_right(...)
+slide_in_right(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to slide in a UI element from the right.

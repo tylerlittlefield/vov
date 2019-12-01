@@ -24,9 +24,13 @@ run_demo <- function() {
 #' @description Animation to fade in a UI element from the bottom left.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_in_bottom_left <- function(...) {
-  shiny::tags$div(..., class = "vov fade-in-bottom-left")
+fade_in_bottom_left <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-in-bottom-left", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade in bottom right
@@ -34,9 +38,13 @@ fade_in_bottom_left <- function(...) {
 #' @description Animation to fade in a UI element from the bottom right.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_in_bottom_right <- function(...) {
-  shiny::tags$div(..., class = "vov fade-in-bottom-right")
+fade_in_bottom_right <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-in-bottom-right", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade in down
@@ -44,9 +52,13 @@ fade_in_bottom_right <- function(...) {
 #' @description Animation to fade in a UI element downward.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_in_down <- function(...) {
-  shiny::tags$div(..., class = "vov fade-in-down")
+fade_in_down <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-in-down", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade in left
@@ -54,9 +66,13 @@ fade_in_down <- function(...) {
 #' @description Animation to fade in a UI element from the left.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_in_left <- function(...) {
-  shiny::tags$div(..., class = "vov fade-in-left")
+fade_in_left <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-in-left", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade in right
@@ -64,9 +80,13 @@ fade_in_left <- function(...) {
 #' @description Animation to fade in a UI element from the right.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_in_right <- function(...) {
-  shiny::tags$div(..., class = "vov fade-in-right")
+fade_in_right <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-in-right", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade in top left
@@ -74,9 +94,13 @@ fade_in_right <- function(...) {
 #' @description Animation to fade in a UI element from the top left.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_in_top_left <- function(...) {
-  shiny::tags$div(..., class = "vov fade-in-top-left")
+fade_in_top_left <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-in-top-left", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade in top right
@@ -84,9 +108,13 @@ fade_in_top_left <- function(...) {
 #' @description Animation to fade in a UI element from the top right.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_in_top_right <- function(...) {
-  shiny::tags$div(..., class = "vov fade-in-top-right")
+fade_in_top_right <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-in-top-right", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade in up
@@ -94,9 +122,13 @@ fade_in_top_right <- function(...) {
 #' @description Animation to fade in a UI element upward.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_in_up <- function(...) {
-  shiny::tags$div(..., class = "vov fade-in-up")
+fade_in_up <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-in-up", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade in
@@ -104,9 +136,13 @@ fade_in_up <- function(...) {
 #' @description Animation to fade in a UI element.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts#'
 #' @export
-fade_in <- function(...) {
-  shiny::tags$div(..., class = "vov fade-in")
+fade_in <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-in", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade out bottom left
@@ -115,9 +151,13 @@ fade_in <- function(...) {
 #' bottom left.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_out_bottom_left <- function(...) {
-  shiny::tags$div(..., class = "vov fade-out-bottom-left")
+fade_out_bottom_left <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-out-bottom-left", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade out bottom right
@@ -126,9 +166,13 @@ fade_out_bottom_left <- function(...) {
 #' bottom right
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_out_bottom_right <- function(...) {
-  shiny::tags$div(..., class = "vov fade-out-bottom-right")
+fade_out_bottom_right <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-out-bottom-right", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade out down
@@ -136,9 +180,13 @@ fade_out_bottom_right <- function(...) {
 #' @description Animation to fade out (disappear) a UI element downward.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_out_down <- function(...) {
-  shiny::tags$div(..., class = "vov fade-out-down")
+fade_out_down <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-out-down", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade out left
@@ -146,9 +194,13 @@ fade_out_down <- function(...) {
 #' @description Animation to fade out (disappear) a UI element from the left.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_out_left <- function(...) {
-  shiny::tags$div(..., class = "vov fade-out-left")
+fade_out_left <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-out-left", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade out right
@@ -156,9 +208,13 @@ fade_out_left <- function(...) {
 #' @description Animation to fade out (disappear) a UI element from the right.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_out_right <- function(...) {
-  shiny::tags$div(..., class = "vov fade-out-right")
+fade_out_right <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-out-right", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade out top left
@@ -167,9 +223,13 @@ fade_out_right <- function(...) {
 #' left.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_out_top_left <- function(...) {
-  shiny::tags$div(..., class = "vov fade-out-top-left")
+fade_out_top_left <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-out-top-left", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade out top right
@@ -178,9 +238,13 @@ fade_out_top_left <- function(...) {
 #' right.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_out_top_right <- function(...) {
-  shiny::tags$div(..., class = "vov fade-out-top-right")
+fade_out_top_right <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-out-top-right", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade out up
@@ -188,9 +252,13 @@ fade_out_top_right <- function(...) {
 #' @description Animation to fade out (disappear) a UI element upwards.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_out_up <- function(...) {
-  shiny::tags$div(..., class = "vov fade-out-up")
+fade_out_up <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-out-up", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Fade out
@@ -198,9 +266,13 @@ fade_out_up <- function(...) {
 #' @description Animation to fade out (disappear) a UI element.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-fade_out <- function(...) {
-  shiny::tags$div(..., class = "vov fade-out")
+fade_out <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("fade-out", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Roll in left
@@ -208,9 +280,13 @@ fade_out <- function(...) {
 #' @description Animation to roll in a UI element from the left.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-roll_in_left <- function(...) {
-  shiny::tags$div(..., class = "vov roll-in-left")
+roll_in_left <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("roll-in-left", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Roll in right
@@ -218,9 +294,13 @@ roll_in_left <- function(...) {
 #' @description Animation to roll in a UI element from the right.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-roll_in_right <- function(...) {
-  shiny::tags$div(..., class = "vov roll-in-right")
+roll_in_right <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("roll-in-right", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Roll out left
@@ -228,9 +308,13 @@ roll_in_right <- function(...) {
 #' @description Animation to roll out (disappear) a UI element from the left.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-roll_out_left <- function(...) {
-  shiny::tags$div(..., class = "vov roll-out-left")
+roll_out_left <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("roll-out-left", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Roll out right
@@ -238,9 +322,13 @@ roll_out_left <- function(...) {
 #' @description Animation to roll out (disappear) a UI element from the right.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-roll_out_right <- function(...) {
-  shiny::tags$div(..., class = "vov roll-out-right")
+roll_out_right <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("roll-out-right", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Shake vertical
@@ -248,9 +336,13 @@ roll_out_right <- function(...) {
 #' @description Animation to shake a UI element vertically.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-shake_vertical <- function(...) {
-  shiny::tags$div(..., class = "vov shake-vertical")
+shake_vertical <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("shake-vertical", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Shake horizontal
@@ -258,9 +350,13 @@ shake_vertical <- function(...) {
 #' @description Animation to shake a UI element horizontally.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-shake_horizontal <- function(...) {
-  shiny::tags$div(..., class = "vov shake-horizontal")
+shake_horizontal <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("shake-horizontal", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Blur in
@@ -268,9 +364,13 @@ shake_horizontal <- function(...) {
 #' @description Animation to blur in a UI element.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-blur_in <- function(...) {
-  shiny::tags$div(..., class = "vov blur-in")
+blur_in <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("blur-in", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Blur out
@@ -278,9 +378,13 @@ blur_in <- function(...) {
 #' @description Animation to blur out (disappear) a UI element.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-blur_out <- function(...) {
-  shiny::tags$div(..., class = "vov blur-out")
+blur_out <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("blur-out", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Slide in down
@@ -288,9 +392,13 @@ blur_out <- function(...) {
 #' @description Animation to slide in a UI element downward.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-slide_in_down <- function(...) {
-  shiny::tags$div(..., class = "vov slide-in-down")
+slide_in_down <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("slide-in-down", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Slide in left
@@ -298,9 +406,13 @@ slide_in_down <- function(...) {
 #' @description Animation to slide in a UI element from the left.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-slide_in_left <- function(...) {
-  shiny::tags$div(..., class = "vov slide-in-left")
+slide_in_left <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("slide-in-left", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Slide in right
@@ -308,9 +420,13 @@ slide_in_left <- function(...) {
 #' @description Animation to slide in a UI element from the right.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-slide_in_right <- function(...) {
-  shiny::tags$div(..., class = "vov slide-in-right")
+slide_in_right <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("slide-in-right", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Slide in up
@@ -318,9 +434,13 @@ slide_in_right <- function(...) {
 #' @description Animation to slide in a UI element upward.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-slide_in_up <- function(...) {
-  shiny::tags$div(..., class = "vov slide-in-up")
+slide_in_up <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("slide-in-up", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Slide out down
@@ -328,9 +448,13 @@ slide_in_up <- function(...) {
 #' @description Animation to slide in a UI element downward.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-slide_out_down <- function(...) {
-  shiny::tags$div(..., class = "vov slide-out-down")
+slide_out_down <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("slide-out-down", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Slide out left
@@ -338,9 +462,13 @@ slide_out_down <- function(...) {
 #' @description Animation to slide out (disappear) a UI element from the left.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-slide_out_left <- function(...) {
-  shiny::tags$div(..., class = "vov slide-out-left")
+slide_out_left <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("slide-out-left", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Slide out right
@@ -348,9 +476,13 @@ slide_out_left <- function(...) {
 #' @description Animation to slide out (disappear) a UI element from the right.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-slide_out_right <- function(...) {
-  shiny::tags$div(..., class = "vov slide-out-right")
+slide_out_right <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("slide-out-right", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Slide out up
@@ -358,9 +490,13 @@ slide_out_right <- function(...) {
 #' @description Animation to slide out (disappear) a UI element upward.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-slide_out_up <- function(...) {
-  shiny::tags$div(..., class = "vov slide-out-up")
+slide_out_up <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("slide-out-up", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Throb
@@ -368,9 +504,13 @@ slide_out_up <- function(...) {
 #' @description Animation to throb a UI element outward.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-throb <- function(...) {
-  shiny::tags$div(..., class = "vov throb")
+throb <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("throb", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' I-Throb
@@ -378,9 +518,13 @@ throb <- function(...) {
 #' @description Animation to throb a UI element inward.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-i_throb <- function(...) {
-  shiny::tags$div(..., class = "vov i-throb")
+i_throb <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("i-throb", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Swivel horizontal
@@ -388,9 +532,13 @@ i_throb <- function(...) {
 #' @description Animation to swivel a UI element horizontally.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-swivel_horizontal <- function(...) {
-  shiny::tags$div(..., class = "vov swivel-horizontal")
+swivel_horizontal <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("swivel-horizontal", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Swivel horizontal double
@@ -398,9 +546,13 @@ swivel_horizontal <- function(...) {
 #' @description Animation to swivel a UI element horizontally, twice.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-swivel_horizontal_double <- function(...) {
-  shiny::tags$div(..., class = "vov swivel-horizontal-double")
+swivel_horizontal_double <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("swivel-horizontal-double", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Swivel vertical
@@ -408,9 +560,13 @@ swivel_horizontal_double <- function(...) {
 #' @description Animation to swivel a UI element vertically.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-swivel_vertical <- function(...) {
-  shiny::tags$div(..., class = "vov swivel-vertical")
+swivel_vertical <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("swivel-vertical", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Swivel vertical double
@@ -418,9 +574,13 @@ swivel_vertical <- function(...) {
 #' @description Animation to swivel a UI element vetically, twice.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-swivel_vertical_double <- function(...) {
-  shiny::tags$div(..., class = "vov swivel-vertical-double")
+swivel_vertical_double <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("swivel-vertical-double", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Wheel in left
@@ -428,9 +588,13 @@ swivel_vertical_double <- function(...) {
 #' @description Animation to wheel in a UI element from the left.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-wheel_in_left <- function(...) {
-  shiny::tags$div(..., class = "vov wheel-in-left")
+wheel_in_left <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("wheel-in-left", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Wheel in right
@@ -438,9 +602,13 @@ wheel_in_left <- function(...) {
 #' @description Animation to wheel in a UI element from the right.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-wheel_in_right <- function(...) {
-  shiny::tags$div(..., class = "vov wheel-in-right")
+wheel_in_right <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("wheel-in-right", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Wheel out left
@@ -448,9 +616,13 @@ wheel_in_right <- function(...) {
 #' @description Animation to wheel out (disappear) a UI element from the left.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-wheel_out_left <- function(...) {
-  shiny::tags$div(..., class = "vov wheel-out-left")
+wheel_out_left <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("wheel-out-left", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Wheel out right
@@ -458,9 +630,13 @@ wheel_out_left <- function(...) {
 #' @description Animation to wheel out (disappear) a UI element from the right.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-wheel_out_right <- function(...) {
-  shiny::tags$div(..., class = "vov wheel-out-right")
+wheel_out_right <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("wheel-out-right", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 
 #' Flash
@@ -468,8 +644,12 @@ wheel_out_right <- function(...) {
 #' @description Animation to flash a UI element.
 #'
 #' @param ... A UI element
+#' @param duration Duration of animation, one of fastest, faster, fast, slow,
+#' slower, slowest
+#' @param delay Delay in seconds before animation starts
 #' @export
-flash <- function(...) {
-  shiny::tags$div(..., class = "vov flash")
+flash <- function(..., duration = NULL, delay = NULL) {
+  x <- parse_animation("flash", duration, delay)
+  shiny::tags$div(..., class = x)
 }
 

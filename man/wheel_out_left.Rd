@@ -4,10 +4,15 @@
 \alias{wheel_out_left}
 \title{Wheel out left}
 \usage{
-wheel_out_left(...)
+wheel_out_left(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to wheel out (disappear) a UI element from the left.

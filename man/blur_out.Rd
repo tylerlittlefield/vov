@@ -4,10 +4,15 @@
 \alias{blur_out}
 \title{Blur out}
 \usage{
-blur_out(...)
+blur_out(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to blur out (disappear) a UI element.

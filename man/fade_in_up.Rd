@@ -4,10 +4,15 @@
 \alias{fade_in_up}
 \title{Fade in up}
 \usage{
-fade_in_up(...)
+fade_in_up(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to fade in a UI element upward.

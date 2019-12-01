@@ -4,10 +4,15 @@
 \alias{swivel_horizontal}
 \title{Swivel horizontal}
 \usage{
-swivel_horizontal(...)
+swivel_horizontal(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to swivel a UI element horizontally.

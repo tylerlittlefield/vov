@@ -4,10 +4,15 @@
 \alias{blur_in}
 \title{Blur in}
 \usage{
-blur_in(...)
+blur_in(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to blur in a UI element.

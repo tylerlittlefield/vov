@@ -4,10 +4,15 @@
 \alias{wheel_in_left}
 \title{Wheel in left}
 \usage{
-wheel_in_left(...)
+wheel_in_left(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to wheel in a UI element from the left.

@@ -4,10 +4,15 @@
 \alias{slide_out_up}
 \title{Slide out up}
 \usage{
-slide_out_up(...)
+slide_out_up(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to slide out (disappear) a UI element upward.

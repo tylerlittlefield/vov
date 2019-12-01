@@ -4,10 +4,15 @@
 \alias{swivel_vertical_double}
 \title{Swivel vertical double}
 \usage{
-swivel_vertical_double(...)
+swivel_vertical_double(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to swivel a UI element vetically, twice.

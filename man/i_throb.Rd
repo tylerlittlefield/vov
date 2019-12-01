@@ -4,10 +4,15 @@
 \alias{i_throb}
 \title{I-Throb}
 \usage{
-i_throb(...)
+i_throb(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to throb a UI element inward.

@@ -4,10 +4,15 @@
 \alias{roll_in_right}
 \title{Roll in right}
 \usage{
-roll_in_right(...)
+roll_in_right(..., duration = NULL, delay = NULL)
 }
 \arguments{
 \item{...}{A UI element}
+
+\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
+slower, slowest}
+
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to roll in a UI element from the right.

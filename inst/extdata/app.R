@@ -22,7 +22,7 @@ ui <- fluidPage(
       selectInput(
         inputId = "animation",
         label = "",
-        choices = ls("package:vov")[!grepl("use_vov", ls("package:vov"))]
+        choices = ls("package:vov")[!grepl(c("use_vov", "run_demo"), ls("package:vov"))]
       )
     )
   )

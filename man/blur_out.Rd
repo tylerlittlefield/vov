@@ -4,10 +4,10 @@
 \alias{blur_out}
 \title{Blur out}
 \usage{
-blur_out(..., duration = NULL, delay = NULL)
+blur_out(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

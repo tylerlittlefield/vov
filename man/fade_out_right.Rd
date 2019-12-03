@@ -4,10 +4,10 @@
 \alias{fade_out_right}
 \title{Fade out right}
 \usage{
-fade_out_right(..., duration = NULL, delay = NULL)
+fade_out_right(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

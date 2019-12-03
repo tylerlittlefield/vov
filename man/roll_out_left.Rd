@@ -4,10 +4,10 @@
 \alias{roll_out_left}
 \title{Roll out left}
 \usage{
-roll_out_left(..., duration = NULL, delay = NULL)
+roll_out_left(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

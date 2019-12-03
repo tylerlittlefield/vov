@@ -57,9 +57,7 @@ Where `swivel_vertical(h1("fade_in_bottom_left"))` returns:
 ``` r
 x <- swivel_vertical(h1("hello world!"))
 print(x)
-#> <div class="vov swivel-vertical">
-#>   <h1>hello world!</h1>
-#> </div>
+#> <h1 class="vov swivel-vertical">hello world!</h1>
 ```
 
 If you don’t want to load this package, go to the original repo
@@ -68,5 +66,5 @@ file, and write something like this in your UI code:
 
 ``` r
 includeCSS("www/vov.css")
-tags$div(h1("hello world"), class = "vov swivel-vertical")
+htmltools::tagAppendAttributes(h1("hello world"), class = "vov swivel-vertical")
 ```

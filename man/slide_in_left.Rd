@@ -4,10 +4,10 @@
 \alias{slide_in_left}
 \title{Slide in left}
 \usage{
-slide_in_left(..., duration = NULL, delay = NULL)
+slide_in_left(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

@@ -4,10 +4,10 @@
 \alias{swivel_vertical}
 \title{Swivel vertical}
 \usage{
-swivel_vertical(..., duration = NULL, delay = NULL)
+swivel_vertical(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

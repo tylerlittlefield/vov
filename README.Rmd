@@ -73,5 +73,5 @@ If you don't want to load this package, go to the original repo [here](https://g
 
 ```{r, eval=FALSE}
 includeCSS("www/vov.css")
-tags$div(h1("hello world"), class = "vov swivel-vertical")
+htmltools::tagAppendAttributes(h1("hello world"), class = "vov swivel-vertical")
 ```

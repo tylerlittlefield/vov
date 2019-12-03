@@ -4,10 +4,10 @@
 \alias{throb}
 \title{Throb}
 \usage{
-throb(..., duration = NULL, delay = NULL)
+throb(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

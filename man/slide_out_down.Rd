@@ -4,10 +4,10 @@
 \alias{slide_out_down}
 \title{Slide out down}
 \usage{
-slide_out_down(..., duration = NULL, delay = NULL)
+slide_out_down(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

@@ -59,14 +59,14 @@ server <- function(input, output, session) {
     else
       duration <- input$duration
 
-    h1(
-      lapply(
-        "\U0001f44b Hello world!",
-        input$animation,
-        duration = duration,
-        delay = input$delay
-      )[[1]]
-    )
+    x <- list(h1("\U0001f44b Hello world!"))
+
+    lapply(
+      X = x,
+      FUN = input$animation,
+      duration = duration,
+      delay = input$delay
+    )[[1]]
   })
 }
 

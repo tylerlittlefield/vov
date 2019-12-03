@@ -4,10 +4,10 @@
 \alias{flash}
 \title{Flash}
 \usage{
-flash(..., duration = NULL, delay = NULL)
+flash(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

@@ -4,10 +4,10 @@
 \alias{shake_horizontal}
 \title{Shake horizontal}
 \usage{
-shake_horizontal(..., duration = NULL, delay = NULL)
+shake_horizontal(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

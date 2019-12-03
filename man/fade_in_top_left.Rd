@@ -4,10 +4,10 @@
 \alias{fade_in_top_left}
 \title{Fade in top left}
 \usage{
-fade_in_top_left(..., duration = NULL, delay = NULL)
+fade_in_top_left(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

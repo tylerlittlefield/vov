@@ -4,10 +4,10 @@
 \alias{wheel_out_left}
 \title{Wheel out left}
 \usage{
-wheel_out_left(..., duration = NULL, delay = NULL)
+wheel_out_left(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

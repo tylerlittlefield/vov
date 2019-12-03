@@ -4,10 +4,10 @@
 \alias{roll_in_left}
 \title{Roll in left}
 \usage{
-roll_in_left(..., duration = NULL, delay = NULL)
+roll_in_left(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

@@ -4,10 +4,10 @@
 \alias{blur_in}
 \title{Blur in}
 \usage{
-blur_in(..., duration = NULL, delay = NULL)
+blur_in(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

@@ -4,10 +4,10 @@
 \alias{fade_out_up}
 \title{Fade out up}
 \usage{
-fade_out_up(..., duration = NULL, delay = NULL)
+fade_out_up(ui, duration = NULL, delay = NULL)
 }
 \arguments{
-\item{...}{A UI element}
+\item{ui}{A UI element}
 
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}

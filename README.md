@@ -9,6 +9,8 @@
 status](https://travis-ci.org/tyluRp/vov.svg?branch=master)](https://travis-ci.org/tyluRp/vov)
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/tyluRp/vov?branch=master&svg=true)](https://ci.appveyor.com/project/tyluRp/vov)
+[![Codecov test
+coverage](https://codecov.io/gh/tyluRp/vov/branch/master/graph/badge.svg)](https://codecov.io/gh/tyluRp/vov?branch=master)
 <!-- badges: end -->
 
 The goal of vov is to wrap

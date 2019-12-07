@@ -15,5 +15,5 @@ slower, slowest}
 \item{delay}{Delay in seconds before animation starts}
 }
 \description{
-Animation to swivel a UI element vetically, twice.
+Animation to swivel a UI element vertically, twice.
 }

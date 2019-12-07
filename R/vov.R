@@ -570,7 +570,7 @@ swivel_vertical <- function(ui, duration = NULL, delay = NULL) {
 
 #' Swivel vertical double
 #'
-#' @description Animation to swivel a UI element vetically, twice.
+#' @description Animation to swivel a UI element vertically, twice.
 #'
 #' @param ui A UI element
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,

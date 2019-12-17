@@ -17,3 +17,20 @@ slower, slowest}
 \description{
 Animation to fade in a UI element upward.
 }
+\examples{
+if (interactive()) {
+  library(shiny)
+  library(vov)
+
+  ui <- fluidPage(
+    use_vov(),
+    fade_in_up(
+      h1("Hello world!")
+    )
+  )
+
+  server <- function(input, output, session) {}
+
+  shinyApp(ui, server)
+}
+}

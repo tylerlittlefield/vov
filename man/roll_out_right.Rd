@@ -17,3 +17,20 @@ slower, slowest}
 \description{
 Animation to roll out (disappear) a UI element from the right.
 }
+\examples{
+if (interactive()) {
+  library(shiny)
+  library(vov)
+
+  ui <- fluidPage(
+    use_vov(),
+    roll_out_right(
+      h1("Hello world!")
+    )
+  )
+
+  server <- function(input, output, session) {}
+
+  shinyApp(ui, server)
+}
+}

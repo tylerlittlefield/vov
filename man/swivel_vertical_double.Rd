@@ -17,3 +17,20 @@ slower, slowest}
 \description{
 Animation to swivel a UI element vertically, twice.
 }
+\examples{
+if (interactive()) {
+  library(shiny)
+  library(vov)
+
+  ui <- fluidPage(
+    use_vov(),
+    swivel_vertical_double(
+      h1("Hello world!")
+    )
+  )
+
+  server <- function(input, output, session) {}
+
+  shinyApp(ui, server)
+}
+}

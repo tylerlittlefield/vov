@@ -12,8 +12,25 @@ fade_in(ui, duration = NULL, delay = NULL)
 \item{duration}{Duration of animation, one of fastest, faster, fast, slow,
 slower, slowest}
 
-\item{delay}{Delay in seconds before animation starts#'}
+\item{delay}{Delay in seconds before animation starts}
 }
 \description{
 Animation to fade in a UI element.
+}
+\examples{
+if (interactive()) {
+  library(shiny)
+  library(vov)
+
+  ui <- fluidPage(
+    use_vov(),
+    fade_in(
+      h1("Hello world!")
+    )
+  )
+
+  server <- function(input, output, session) {}
+
+  shinyApp(ui, server)
+}
 }

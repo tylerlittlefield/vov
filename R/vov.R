@@ -3,6 +3,22 @@
 #' @description Enables vov by including the CSS file necessary for the
 #' animations.
 #'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_in(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 use_vov <- function() {
   css <- system.file("extdata", "vov.css", package = "vov")
@@ -13,6 +29,10 @@ use_vov <- function() {
 #'
 #' @description Run a demo version of the app to try out all the animations.
 #'
+#' @examples
+#' if (interactive()) {
+#'   run_demo()
+#' }
 #' @export
 run_demo <- function() {
   shiny::runApp(system.file("extdata", "app.R", package = "vov"))
@@ -26,6 +46,23 @@ run_demo <- function() {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_in_bottom_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_in_bottom_left <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-in-bottom-left", duration, delay)
@@ -40,6 +77,23 @@ fade_in_bottom_left <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_in_bottom_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_in_bottom_right <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-in-bottom-right", duration, delay)
@@ -54,6 +108,23 @@ fade_in_bottom_right <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_in_down(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_in_down <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-in-down", duration, delay)
@@ -68,6 +139,23 @@ fade_in_down <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_in_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_in_left <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-in-left", duration, delay)
@@ -82,6 +170,23 @@ fade_in_left <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_in_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_in_right <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-in-right", duration, delay)
@@ -96,6 +201,23 @@ fade_in_right <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_in_top_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_in_top_left <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-in-top-left", duration, delay)
@@ -110,6 +232,23 @@ fade_in_top_left <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_in_top_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_in_top_right <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-in-top-right", duration, delay)
@@ -124,6 +263,23 @@ fade_in_top_right <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_in_up(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_in_up <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-in-up", duration, delay)
@@ -137,7 +293,24 @@ fade_in_up <- function(ui, duration = NULL, delay = NULL) {
 #' @param ui A UI element
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
-#' @param delay Delay in seconds before animation starts#'
+#' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_in(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_in <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-in", duration, delay)
@@ -153,6 +326,23 @@ fade_in <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_out_bottom_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_out_bottom_left <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-out-bottom-left", duration, delay)
@@ -168,6 +358,23 @@ fade_out_bottom_left <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_out_bottom_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_out_bottom_right <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-out-bottom-right", duration, delay)
@@ -182,6 +389,23 @@ fade_out_bottom_right <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_out_down(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_out_down <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-out-down", duration, delay)
@@ -196,6 +420,23 @@ fade_out_down <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_out_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_out_left <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-out-left", duration, delay)
@@ -210,6 +451,23 @@ fade_out_left <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_out_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_out_right <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-out-right", duration, delay)
@@ -225,6 +483,23 @@ fade_out_right <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_out_top_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_out_top_left <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-out-top-left", duration, delay)
@@ -240,6 +515,23 @@ fade_out_top_left <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_out_top_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_out_top_right <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-out-top-right", duration, delay)
@@ -254,6 +546,23 @@ fade_out_top_right <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_out_up(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_out_up <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-out-up", duration, delay)
@@ -268,6 +577,23 @@ fade_out_up <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     fade_out(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 fade_out <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("fade-out", duration, delay)
@@ -282,6 +608,23 @@ fade_out <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     roll_in_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 roll_in_left <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("roll-in-left", duration, delay)
@@ -296,6 +639,23 @@ roll_in_left <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     roll_in_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 roll_in_right <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("roll-in-right", duration, delay)
@@ -310,6 +670,23 @@ roll_in_right <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     roll_out_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 roll_out_left <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("roll-out-left", duration, delay)
@@ -324,6 +701,23 @@ roll_out_left <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     roll_out_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 roll_out_right <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("roll-out-right", duration, delay)
@@ -338,6 +732,23 @@ roll_out_right <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     shake_vertical(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 shake_vertical <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("shake-vertical", duration, delay)
@@ -352,6 +763,23 @@ shake_vertical <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     shake_horizontal(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 shake_horizontal <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("shake-horizontal", duration, delay)
@@ -366,6 +794,23 @@ shake_horizontal <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     blur_in(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 blur_in <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("blur-in", duration, delay)
@@ -380,6 +825,23 @@ blur_in <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     blur_out(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 blur_out <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("blur-out", duration, delay)
@@ -394,6 +856,23 @@ blur_out <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     slide_in_down(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 slide_in_down <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("slide-in-down", duration, delay)
@@ -408,6 +887,23 @@ slide_in_down <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     slide_in_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 slide_in_left <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("slide-in-left", duration, delay)
@@ -422,6 +918,23 @@ slide_in_left <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     slide_in_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 slide_in_right <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("slide-in-right", duration, delay)
@@ -436,6 +949,23 @@ slide_in_right <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     slide_in_up(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 slide_in_up <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("slide-in-up", duration, delay)
@@ -450,6 +980,23 @@ slide_in_up <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     slide_out_down(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 slide_out_down <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("slide-out-down", duration, delay)
@@ -464,6 +1011,23 @@ slide_out_down <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     slide_out_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 slide_out_left <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("slide-out-left", duration, delay)
@@ -478,6 +1042,23 @@ slide_out_left <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     slide_out_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 slide_out_right <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("slide-out-right", duration, delay)
@@ -492,6 +1073,23 @@ slide_out_right <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     slide_out_up(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 slide_out_up <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("slide-out-up", duration, delay)
@@ -506,6 +1104,23 @@ slide_out_up <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     throb(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 throb <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("throb", duration, delay)
@@ -520,6 +1135,23 @@ throb <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     i_throb(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 i_throb <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("i-throb", duration, delay)
@@ -534,6 +1166,23 @@ i_throb <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     swivel_horizontal(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 swivel_horizontal <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("swivel-horizontal", duration, delay)
@@ -548,6 +1197,23 @@ swivel_horizontal <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     swivel_horizontal_double(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 swivel_horizontal_double <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("swivel-horizontal-double", duration, delay)
@@ -562,6 +1228,23 @@ swivel_horizontal_double <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     swivel_vertical(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 swivel_vertical <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("swivel-vertical", duration, delay)
@@ -576,6 +1259,23 @@ swivel_vertical <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     swivel_vertical_double(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 swivel_vertical_double <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("swivel-vertical-double", duration, delay)
@@ -590,6 +1290,23 @@ swivel_vertical_double <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     wheel_in_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 wheel_in_left <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("wheel-in-left", duration, delay)
@@ -604,6 +1321,23 @@ wheel_in_left <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     wheel_in_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 wheel_in_right <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("wheel-in-right", duration, delay)
@@ -618,6 +1352,23 @@ wheel_in_right <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     wheel_out_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 wheel_out_left <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("wheel-out-left", duration, delay)
@@ -632,6 +1383,23 @@ wheel_out_left <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     wheel_out_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 wheel_out_right <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("wheel-out-right", duration, delay)
@@ -646,6 +1414,23 @@ wheel_out_right <- function(ui, duration = NULL, delay = NULL) {
 #' @param duration Duration of animation, one of fastest, faster, fast, slow,
 #' slower, slowest
 #' @param delay Delay in seconds before animation starts
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     flash(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
 #' @export
 flash <- function(ui, duration = NULL, delay = NULL) {
   x <- parse_animation("flash", duration, delay)

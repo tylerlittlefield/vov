@@ -10,3 +10,20 @@ use_vov()
 Enables vov by including the CSS file necessary for the
 animations.
 }
+\examples{
+if (interactive()) {
+  library(shiny)
+  library(vov)
+
+  ui <- fluidPage(
+    use_vov(),
+    fade_in(
+      h1("Hello world!")
+    )
+  )
+
+  server <- function(input, output, session) {}
+
+  shinyApp(ui, server)
+}
+}

@@ -18,3 +18,20 @@ slower, slowest}
 Animation to fade out (disappear) a UI element from the
 bottom left.
 }
+\examples{
+if (interactive()) {
+  library(shiny)
+  library(vov)
+
+  ui <- fluidPage(
+    use_vov(),
+    fade_out_bottom_left(
+      h1("Hello world!")
+    )
+  )
+
+  server <- function(input, output, session) {}
+
+  shinyApp(ui, server)
+}
+}

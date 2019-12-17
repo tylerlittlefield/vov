@@ -17,3 +17,20 @@ slower, slowest}
 \description{
 Animation to fade in a UI element from the bottom right.
 }
+\examples{
+if (interactive()) {
+  library(shiny)
+  library(vov)
+
+  ui <- fluidPage(
+    use_vov(),
+    fade_in_bottom_right(
+      h1("Hello world!")
+    )
+  )
+
+  server <- function(input, output, session) {}
+
+  shinyApp(ui, server)
+}
+}

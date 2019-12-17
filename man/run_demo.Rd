@@ -9,3 +9,8 @@ run_demo()
 \description{
 Run a demo version of the app to try out all the animations.
 }
+\examples{
+if (interactive()) {
+  run_demo()
+}
+}

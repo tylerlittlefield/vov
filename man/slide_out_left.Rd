@@ -17,3 +17,20 @@ slower, slowest}
 \description{
 Animation to slide out (disappear) a UI element from the left.
 }
+\examples{
+if (interactive()) {
+  library(shiny)
+  library(vov)
+
+  ui <- fluidPage(
+    use_vov(),
+    slide_out_left(
+      h1("Hello world!")
+    )
+  )
+
+  server <- function(input, output, session) {}
+
+  shinyApp(ui, server)
+}
+}

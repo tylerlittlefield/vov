@@ -1,7 +1,7 @@
 ## Resubmission
 This is a resubmission. In this version I have:
 
-* Added examples with if (interactive()) { my code here ... }
+* Added single quotes to package names, software names and API names.
 
 ## Test environments
 * local OS X install, R 3.6.0

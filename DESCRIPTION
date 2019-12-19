@@ -1,9 +1,9 @@
 Package: vov
-Title: Shiny CSS Animations
+Title: CSS Animations for 'shiny' Elements
 Version: 0.1.0
 Authors@R: c(person("Tyler","Littlefield",email="tylurp1@gmail.com",role=c("aut","cre"),comment="Creator of Shiny Wrapper"),person("Vaibhav","Tandon",role=c("ctb","cph"),comment="Author of included CSS code"))
-Description: A wrapper around a CSS library called vov.css, intended for use in
-  shiny applications. Simply wrap a UI element in one of the animation 
+Description: A wrapper around a CSS library called 'vov.css', intended for use 
+  in 'shiny' applications. Simply wrap a UI element in one of the animation 
   functions to see it move.
 License: MIT + file LICENSE
 Encoding: UTF-8

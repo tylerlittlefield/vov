@@ -81,36 +81,38 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the development version from GitHub with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">devtools<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/devtools/man/remote-reexports.html">install_github</a></span>(<span class="st">"tylurp/vov"</span>)</a></code></pre></div>
+<p>Install the released version of <code>vov</code> from CRAN:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"vov"</span>)</a></code></pre></div>
+<p>Or install the development version from GitHub with:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">devtools<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/devtools/man/remote-reexports.html">install_github</a></span>(<span class="st">"tylurp/vov"</span>)</a></code></pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
 <p>You can use <code>vov</code> in a shiny app like so:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(shiny)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(vov)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4">ui &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/shiny/man/fluidPage.html">fluidPage</a></span>(</a>
-<a class="sourceLine" id="cb2-5" data-line-number="5">  <span class="kw"><a href="reference/use_vov.html">use_vov</a></span>(),</a>
-<a class="sourceLine" id="cb2-6" data-line-number="6">  <span class="kw"><a href="reference/swivel_vertical.html">swivel_vertical</a></span>(</a>
-<a class="sourceLine" id="cb2-7" data-line-number="7">    <span class="kw"><a href="https://rdrr.io/pkg/shiny/man/builder.html">h1</a></span>(<span class="st">"hello world!"</span>)</a>
-<a class="sourceLine" id="cb2-8" data-line-number="8">  )</a>
-<a class="sourceLine" id="cb2-9" data-line-number="9">)</a>
-<a class="sourceLine" id="cb2-10" data-line-number="10"></a>
-<a class="sourceLine" id="cb2-11" data-line-number="11">server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {</a>
-<a class="sourceLine" id="cb2-12" data-line-number="12"></a>
-<a class="sourceLine" id="cb2-13" data-line-number="13">}</a>
-<a class="sourceLine" id="cb2-14" data-line-number="14"></a>
-<a class="sourceLine" id="cb2-15" data-line-number="15"><span class="kw"><a href="https://rdrr.io/pkg/shiny/man/shinyApp.html">shinyApp</a></span>(ui, server)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(shiny)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(vov)</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4">ui &lt;-<span class="st"> </span><span class="kw"><a href="https://rdrr.io/pkg/shiny/man/fluidPage.html">fluidPage</a></span>(</a>
+<a class="sourceLine" id="cb3-5" data-line-number="5">  <span class="kw"><a href="reference/use_vov.html">use_vov</a></span>(),</a>
+<a class="sourceLine" id="cb3-6" data-line-number="6">  <span class="kw"><a href="reference/swivel_vertical.html">swivel_vertical</a></span>(</a>
+<a class="sourceLine" id="cb3-7" data-line-number="7">    <span class="kw"><a href="https://rdrr.io/pkg/shiny/man/builder.html">h1</a></span>(<span class="st">"hello world!"</span>)</a>
+<a class="sourceLine" id="cb3-8" data-line-number="8">  )</a>
+<a class="sourceLine" id="cb3-9" data-line-number="9">)</a>
+<a class="sourceLine" id="cb3-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb3-11" data-line-number="11">server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {</a>
+<a class="sourceLine" id="cb3-12" data-line-number="12"></a>
+<a class="sourceLine" id="cb3-13" data-line-number="13">}</a>
+<a class="sourceLine" id="cb3-14" data-line-number="14"></a>
+<a class="sourceLine" id="cb3-15" data-line-number="15"><span class="kw"><a href="https://rdrr.io/pkg/shiny/man/shinyApp.html">shinyApp</a></span>(ui, server)</a></code></pre></div>
 <p>Where <code><a href="reference/swivel_vertical.html">swivel_vertical(h1("fade_in_bottom_left"))</a></code> returns:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">x &lt;-<span class="st"> </span><span class="kw"><a href="reference/swivel_vertical.html">swivel_vertical</a></span>(<span class="kw"><a href="https://rdrr.io/pkg/shiny/man/builder.html">h1</a></span>(<span class="st">"hello world!"</span>))</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/print.html">print</a></span>(x)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="co">#&gt; &lt;h1 class="vov swivel-vertical"&gt;hello world!&lt;/h1&gt;</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">x &lt;-<span class="st"> </span><span class="kw"><a href="reference/swivel_vertical.html">swivel_vertical</a></span>(<span class="kw"><a href="https://rdrr.io/pkg/shiny/man/builder.html">h1</a></span>(<span class="st">"hello world!"</span>))</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw"><a href="https://rdrr.io/r/base/print.html">print</a></span>(x)</a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">#&gt; &lt;h1 class="vov swivel-vertical"&gt;hello world!&lt;/h1&gt;</span></a></code></pre></div>
 <p>If you don’t want to load this package, go to the original repo <a href="https://github.com/vaibhav111tandon/vov.css">here</a>, download the CSS file, and write something like this in your UI code:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/pkg/shiny/man/include.html">includeCSS</a></span>(<span class="st">"www/vov.css"</span>)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2">htmltools<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/htmltools/man/tag.html">tagAppendAttributes</a></span>(<span class="kw"><a href="https://rdrr.io/pkg/shiny/man/builder.html">h1</a></span>(<span class="st">"hello world"</span>), <span class="dt">class =</span> <span class="st">"vov swivel-vertical"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/pkg/shiny/man/include.html">includeCSS</a></span>(<span class="st">"www/vov.css"</span>)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">htmltools<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/htmltools/man/tag.html">tagAppendAttributes</a></span>(<span class="kw"><a href="https://rdrr.io/pkg/shiny/man/builder.html">h1</a></span>(<span class="st">"hello world"</span>), <span class="dt">class =</span> <span class="st">"vov swivel-vertical"</span>)</a></code></pre></div>
 </div>
 </div>
   </div>
@@ -119,6 +121,8 @@
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
+<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=vov">https://​cloud.r-project.org/​package=vov</a>
+</li>
 <li>Browse source code at <br><a href="https://github.com/tyluRp/vov">https://​github.com/​tyluRp/​vov</a>
 </li>
 <li>Report a bug at <br><a href="https://github.com/tyluRp/vov/issues">https://​github.com/​tyluRp/​vov/​issues</a>
@@ -146,6 +150,8 @@
 <ul class="list-unstyled">
 <li><a href="https://travis-ci.org/tyluRp/vov"><img src="https://travis-ci.org/tyluRp/vov.svg?branch=master" alt="Travis build status"></a></li>
 <li><a href="https://ci.appveyor.com/project/tyluRp/vov"><img src="https://ci.appveyor.com/api/projects/status/github/tyluRp/vov?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
+<li><a href="https://cran.r-project.org/package=vov"><img src="https://www.r-pkg.org/badges/version/vov" alt="CRAN status"></a></li>
+<li><a href="https://cran.r-project.org/package=vov"><img src="https://cranlogs.r-pkg.org/badges/vov" alt="CRAN_Download_Badge"></a></li>
 <li><a href="https://codecov.io/gh/tyluRp/vov?branch=master"><img src="https://codecov.io/gh/tyluRp/vov/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
 </ul>
 </div>

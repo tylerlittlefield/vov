@@ -9,6 +9,9 @@
 status](https://travis-ci.org/tyluRp/vov.svg?branch=master)](https://travis-ci.org/tyluRp/vov)
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/tyluRp/vov?branch=master&svg=true)](https://ci.appveyor.com/project/tyluRp/vov)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/vov)](https://cran.r-project.org/package=vov)
+[![CRAN\_Download\_Badge](https://cranlogs.r-pkg.org/badges/vov)](https://cran.r-project.org/package=vov)
 [![Codecov test
 coverage](https://codecov.io/gh/tyluRp/vov/branch/master/graph/badge.svg)](https://codecov.io/gh/tyluRp/vov?branch=master)
 <!-- badges: end -->
@@ -25,7 +28,13 @@ Vaibhav Tandon. Alternatively, you can run a local copy with
 
 ## Installation
 
-You can install the development version from GitHub with:
+Install the released version of `vov` from CRAN:
+
+``` r
+install.packages("vov")
+```
+
+Or install the development version from GitHub with:
 
 ``` r
 # install.packages("devtools")

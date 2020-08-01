@@ -9,10 +9,11 @@ fade_in_top_left(ui, duration = NULL, delay = NULL)
 \arguments{
 \item{ui}{A UI element}
 
-\item{duration}{Duration of animation, one of fastest, faster, fast, slow,
-slower, slowest}
+\item{duration}{Duration of animation; Enter word: "fast" = 800 milliseconds,
+"faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
+"slower" = 3 seconds, "slowest" = 4 seconds}
 
-\item{delay}{Delay in seconds before animation starts}
+\item{delay}{Delay in seconds before animation starts; Enter value: 0 - 5}
 }
 \description{
 Animation to fade in a UI element from the top left.

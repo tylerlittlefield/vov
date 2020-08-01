@@ -1,7 +1,9 @@
 # vov 0.1.1.9000
 
-* Fix description file contributors.
-* Add steps and iteration parameters.
+* Fixed description file contributors.
+* Added steps and iteration parameters.
+* Added warnings if params aren't given what they expect.
+* Updated documentation, added details sections, updated pkgdown reference.
 
 # vov 0.1.1
 

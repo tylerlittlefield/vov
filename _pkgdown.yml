@@ -7,53 +7,41 @@ reference:
 - title: Utilities
   desc: ~
   contents:
-  - '`run_demo`'
-  - '`use_vov`'
-- title: Animations
+  - run_demo
+  - use_vov
+- title: Fading Animations
   desc: ~
   contents:
-  - "`blur_in`"
-  - "`fade_in`"
-  - "`fade_in_bottom_right`"
-  - "`fade_in_left`"
-  - "`fade_in_top_left`"
-  - "`fade_in_up`"
-  - "`fade_out_bottom_left`"
-  - "`fade_out_down`"
-  - "`fade_out_right`"
-  - "`fade_out_top_right`"
-  - "`flash`"
-  - "`roll_in_left`"
-  - "`roll_out_left`"
-  - "`shake_vertical`"
-  - "`slide_in_left`"
-  - "`slide_in_up`"
-  - "`slide_out_left`"
-  - "`slide_out_up`"
-  - "`swivel_horizontal_double`"
-  - "`swivel_vertical_double`"
-  - "`wheel_in_left`"
-  - "`wheel_out_left`"
-  - "`blur_out`"
-  - "`fade_in_bottom_left`"
-  - "`fade_in_down`"
-  - "`fade_in_right`"
-  - "`fade_in_top_right`"
-  - "`fade_out`"
-  - "`fade_out_bottom_right`"
-  - "`fade_out_left`"
-  - "`fade_out_top_left`"
-  - "`fade_out_up`"
-  - "`i_throb`"
-  - "`roll_in_right`"
-  - "`roll_out_right`"
-  - "`shake_horizontal`"
-  - "`slide_in_down`"
-  - "`slide_in_right`"
-  - "`slide_out_down`"
-  - "`slide_out_right`"
-  - "`swivel_horizontal`"
-  - "`swivel_vertical`"
-  - "`throb`"
-  - "`wheel_in_right`"
-  - "`wheel_out_right`"
+  - starts_with("fade")
+- title: Rolling Animations
+  desc: ~
+  contents:
+  - starts_with("roll")
+- title: Shaking Animations
+  desc: ~
+  contents:
+  - starts_with("shake")
+- title: Blur Animations
+  desc: ~
+  contents:
+  - starts_with("blur")
+- title: Sliding Animations
+  desc: ~
+  contents:
+  - starts_with("slide")
+- title: Throbing Animations
+  desc: ~
+  contents:
+  - contains("throb")
+- title: Swivel Animations
+  desc: ~
+  contents:
+  - starts_with("swivel")
+- title: Wheel Animations
+  desc: ~
+  contents:
+  - starts_with("wheel")
+- title: Flash Animations
+  desc: ~
+  contents:
+  - starts_with("flash")

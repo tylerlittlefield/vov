@@ -4,7 +4,13 @@
 \alias{swivel_horizontal_double}
 \title{Swivel horizontal double}
 \usage{
-swivel_horizontal_double(ui, duration = NULL, delay = NULL)
+swivel_horizontal_double(
+  ui,
+  duration = NULL,
+  delay = NULL,
+  steps = NULL,
+  iteration = NULL
+)
 }
 \arguments{
 \item{ui}{A UI element}
@@ -12,6 +18,10 @@ swivel_horizontal_double(ui, duration = NULL, delay = NULL)
 \item{duration}{Duration of animation; Enter word: "fast" = 800 milliseconds, "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds, "slower" = 3 seconds, "slowest" = 4 seconds}
 
 \item{delay}{Delay in seconds before animation starts; Enter value: 0 - 5}
+
+\item{steps}{Animation steps; Enter value: 10, 20, 30, 40, or 50}
+
+\item{iteration}{Iteration of animation; Enter value: 1 - 5 or infinite}
 }
 \description{
 Animation to swivel a UI element horizontally, twice.

@@ -2,7 +2,9 @@ vov_params <- function() {
   c(
     '@param ui A UI element',
     '@param duration Duration of animation; Enter word: "fast" = 800 milliseconds, "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds, "slower" = 3 seconds, "slowest" = 4 seconds',
-    '@param delay Delay in seconds before animation starts; Enter value: 0 - 5'
+    '@param delay Delay in seconds before animation starts; Enter value: 0 - 5',
+    '@param steps Animation steps; Enter value: 10, 20, 30, 40, or 50',
+    '@param iteration Iteration of animation; Enter value: 1 - 5 or infinite'
   )
 }
 
@@ -69,8 +71,8 @@ run_demo <- function() {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_in_bottom_left <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-in-bottom-left", duration, delay)
+fade_in_bottom_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-in-bottom-left", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -97,8 +99,8 @@ fade_in_bottom_left <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_in_bottom_right <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-in-bottom-right", duration, delay)
+fade_in_bottom_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-in-bottom-right", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -125,8 +127,8 @@ fade_in_bottom_right <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_in_down <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-in-down", duration, delay)
+fade_in_down <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-in-down", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -153,8 +155,8 @@ fade_in_down <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_in_left <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-in-left", duration, delay)
+fade_in_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-in-left", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -181,8 +183,8 @@ fade_in_left <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_in_right <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-in-right", duration, delay)
+fade_in_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-in-right", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -209,8 +211,8 @@ fade_in_right <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_in_top_left <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-in-top-left", duration, delay)
+fade_in_top_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-in-top-left", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -237,8 +239,8 @@ fade_in_top_left <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_in_top_right <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-in-top-right", duration, delay)
+fade_in_top_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-in-top-right", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -265,8 +267,8 @@ fade_in_top_right <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_in_up <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-in-up", duration, delay)
+fade_in_up <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-in-up", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -293,8 +295,8 @@ fade_in_up <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_in <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-in", duration, delay)
+fade_in <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-in", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -322,8 +324,8 @@ fade_in <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_out_bottom_left <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-out-bottom-left", duration, delay)
+fade_out_bottom_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-out-bottom-left", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -351,8 +353,8 @@ fade_out_bottom_left <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_out_bottom_right <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-out-bottom-right", duration, delay)
+fade_out_bottom_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-out-bottom-right", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -379,8 +381,8 @@ fade_out_bottom_right <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_out_down <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-out-down", duration, delay)
+fade_out_down <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-out-down", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -407,8 +409,8 @@ fade_out_down <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_out_left <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-out-left", duration, delay)
+fade_out_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-out-left", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -435,8 +437,8 @@ fade_out_left <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_out_right <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-out-right", duration, delay)
+fade_out_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-out-right", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -464,8 +466,8 @@ fade_out_right <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_out_top_left <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-out-top-left", duration, delay)
+fade_out_top_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-out-top-left", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -493,8 +495,8 @@ fade_out_top_left <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_out_top_right <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-out-top-right", duration, delay)
+fade_out_top_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-out-top-right", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -521,8 +523,8 @@ fade_out_top_right <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_out_up <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-out-up", duration, delay)
+fade_out_up <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-out-up", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -549,8 +551,8 @@ fade_out_up <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-fade_out <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("fade-out", duration, delay)
+fade_out <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("fade-out", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -577,8 +579,8 @@ fade_out <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-roll_in_left <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("roll-in-left", duration, delay)
+roll_in_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("roll-in-left", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -605,8 +607,8 @@ roll_in_left <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-roll_in_right <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("roll-in-right", duration, delay)
+roll_in_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("roll-in-right", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -633,8 +635,8 @@ roll_in_right <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-roll_out_left <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("roll-out-left", duration, delay)
+roll_out_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("roll-out-left", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -661,8 +663,8 @@ roll_out_left <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-roll_out_right <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("roll-out-right", duration, delay)
+roll_out_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("roll-out-right", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -689,8 +691,8 @@ roll_out_right <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-shake_vertical <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("shake-vertical", duration, delay)
+shake_vertical <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("shake-vertical", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -717,8 +719,8 @@ shake_vertical <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-shake_horizontal <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("shake-horizontal", duration, delay)
+shake_horizontal <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("shake-horizontal", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -745,8 +747,8 @@ shake_horizontal <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-blur_in <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("blur-in", duration, delay)
+blur_in <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("blur-in", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -773,8 +775,8 @@ blur_in <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-blur_out <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("blur-out", duration, delay)
+blur_out <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("blur-out", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -801,8 +803,8 @@ blur_out <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-slide_in_down <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("slide-in-down", duration, delay)
+slide_in_down <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("slide-in-down", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -829,8 +831,8 @@ slide_in_down <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-slide_in_left <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("slide-in-left", duration, delay)
+slide_in_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("slide-in-left", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -857,8 +859,8 @@ slide_in_left <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-slide_in_right <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("slide-in-right", duration, delay)
+slide_in_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("slide-in-right", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -885,8 +887,8 @@ slide_in_right <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-slide_in_up <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("slide-in-up", duration, delay)
+slide_in_up <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("slide-in-up", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -913,8 +915,8 @@ slide_in_up <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-slide_out_down <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("slide-out-down", duration, delay)
+slide_out_down <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("slide-out-down", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -941,8 +943,8 @@ slide_out_down <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-slide_out_left <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("slide-out-left", duration, delay)
+slide_out_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("slide-out-left", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -969,8 +971,8 @@ slide_out_left <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-slide_out_right <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("slide-out-right", duration, delay)
+slide_out_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("slide-out-right", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -997,8 +999,8 @@ slide_out_right <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-slide_out_up <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("slide-out-up", duration, delay)
+slide_out_up <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("slide-out-up", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -1025,8 +1027,8 @@ slide_out_up <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-throb <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("throb", duration, delay)
+throb <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("throb", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -1053,8 +1055,8 @@ throb <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-i_throb <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("i-throb", duration, delay)
+i_throb <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("i-throb", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -1081,8 +1083,8 @@ i_throb <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-swivel_horizontal <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("swivel-horizontal", duration, delay)
+swivel_horizontal <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("swivel-horizontal", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -1109,8 +1111,8 @@ swivel_horizontal <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-swivel_horizontal_double <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("swivel-horizontal-double", duration, delay)
+swivel_horizontal_double <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("swivel-horizontal-double", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -1137,8 +1139,8 @@ swivel_horizontal_double <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-swivel_vertical <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("swivel-vertical", duration, delay)
+swivel_vertical <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("swivel-vertical", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -1165,8 +1167,8 @@ swivel_vertical <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-swivel_vertical_double <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("swivel-vertical-double", duration, delay)
+swivel_vertical_double <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("swivel-vertical-double", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -1193,8 +1195,8 @@ swivel_vertical_double <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-wheel_in_left <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("wheel-in-left", duration, delay)
+wheel_in_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("wheel-in-left", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -1221,8 +1223,8 @@ wheel_in_left <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-wheel_in_right <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("wheel-in-right", duration, delay)
+wheel_in_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("wheel-in-right", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -1249,8 +1251,8 @@ wheel_in_right <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-wheel_out_left <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("wheel-out-left", duration, delay)
+wheel_out_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("wheel-out-left", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -1277,8 +1279,8 @@ wheel_out_left <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-wheel_out_right <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("wheel-out-right", duration, delay)
+wheel_out_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("wheel-out-right", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
@@ -1305,8 +1307,8 @@ wheel_out_right <- function(ui, duration = NULL, delay = NULL) {
 #'   shinyApp(ui, server)
 #' }
 #' @export
-flash <- function(ui, duration = NULL, delay = NULL) {
-  x <- parse_animation("flash", duration, delay)
+flash <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("flash", duration, delay, steps, iteration)
   htmltools::tagAppendAttributes(ui, class = x)
 }
 

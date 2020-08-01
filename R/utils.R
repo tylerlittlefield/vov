@@ -9,14 +9,22 @@ null_transformer <- function(str = "NULL") {
   }
 }
 
-parse_animation <- function(class, duration, delay) {
+parse_animation <- function(class, duration, delay, steps, iteration) {
   if (!is.null(delay))
     delay <- glue::glue("t-{delay}")
 
+  if (!is.null(steps))
+    steps <- glue::glue("f-{steps}")
+
+  if (!is.null(iteration)) {
+    if (iteration != "infinite")
+      iteration <- glue::glue("c-{iteration}")
+  }
+
   x <- glue::glue(
-    "vov {class} {duration} {delay}",
+    "vov {class} {duration} {delay} {steps} {iteration}",
     .transformer = null_transformer("")
   )
 
-  trimws(x)
+  trimws(gsub("\\s+", " ", x))
 }

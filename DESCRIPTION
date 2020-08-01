@@ -1,6 +1,6 @@
 Package: vov
 Title: CSS Animations for 'shiny' Elements
-Version: 0.1.1
+Version: 0.1.1.9000
 Authors@R: c(person("Tyler","Littlefield",email="tylerlittlefield@hey.com",role=c("aut","cre"),comment="Creator of Shiny Wrapper"),
              person("Vaibhav","Tandon",role=c("ctb","cph"),comment="Author of included CSS code"),
              person("Danube", "Huynhle",role=c("ctb")))

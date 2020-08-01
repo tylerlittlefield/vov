@@ -64,18 +64,10 @@ shinyApp(ui, server)
 Where `swivel_vertical(h1("fade_in_bottom_left"))` returns:
 
 ``` r
-swivel_vertical(h1("hello world!"))
+x <- swivel_vertical(h1("hello world!"))
+print(x)
+#> <h1 class="vov swivel-vertical">hello world!</h1>
 ```
-
-<!--html_preserve-->
-
-<h1 class="vov swivel-vertical">
-
-hello world\!
-
-</h1>
-
-<!--/html_preserve-->
 
 If you don’t want to load this package, go to the original repo
 [here](https://github.com/vaibhav111tandon/vov.css), download the CSS

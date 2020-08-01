@@ -1,7 +1,7 @@
 Package: vov
 Title: CSS Animations for 'shiny' Elements
 Version: 0.1.1
-Authors@R: c(person("Tyler","Littlefield",email="tylurp1@gmail.com",role=c("aut","cre"),comment="Creator of Shiny Wrapper"),
+Authors@R: c(person("Tyler","Littlefield",email="tylerlittlefield@hey.com",role=c("aut","cre"),comment="Creator of Shiny Wrapper"),
              person("Vaibhav","Tandon",role=c("ctb","cph"),comment="Author of included CSS code"),
              person("Huynhle","Danube",role=c("ctb")))
 Description: A wrapper around a CSS library called 'vov.css', intended for use 

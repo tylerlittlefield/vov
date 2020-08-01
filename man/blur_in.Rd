@@ -13,9 +13,9 @@ blur_in(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL)
 
 \item{delay}{Delay in seconds before animation starts}
 
-\item{steps}{Animation steps; Enter value: 10, 20, 30, 40, or 50}
+\item{steps}{Animation steps}
 
-\item{iteration}{Iteration of animation; Enter value: 1 - 5 or infinite}
+\item{iteration}{Iteration of animation}
 }
 \description{
 Animation to blur in a UI element.

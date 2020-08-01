@@ -3,8 +3,8 @@ vov_params <- function() {
     '@param ui A UI element',
     '@param duration Duration of animation',
     '@param delay Delay in seconds before animation starts',
-    '@param steps Animation steps; Enter value: 10, 20, 30, 40, or 50',
-    '@param iteration Iteration of animation; Enter value: 1 - 5 or infinite',
+    '@param steps Animation steps',
+    '@param iteration Iteration of animation',
     '@details
       \\itemize{
         \\item Duration expects one of: "fast" = 800 milliseconds, "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds, "slower" = 3 seconds, "slowest" = 4 seconds,

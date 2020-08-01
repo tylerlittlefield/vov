@@ -120,7 +120,13 @@
     <p>Animation to swivel a UI element horizontally, twice.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>swivel_horizontal_double</span>(<span class='no'>ui</span>, <span class='kw'>duration</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>delay</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
+    <pre class="usage"><span class='fu'>swivel_horizontal_double</span>(
+  <span class='no'>ui</span>,
+  <span class='kw'>duration</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>delay</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>steps</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>iteration</span> <span class='kw'>=</span> <span class='kw'>NULL</span>
+)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -136,6 +142,14 @@
     <tr>
       <th>delay</th>
       <td><p>Delay in seconds before animation starts; Enter value: 0 - 5</p></td>
+    </tr>
+    <tr>
+      <th>steps</th>
+      <td><p>Animation steps; Enter value: 10, 20, 30, 40, or 50</p></td>
+    </tr>
+    <tr>
+      <th>iteration</th>
+      <td><p>Iteration of animation; Enter value: 1 - 5 or infinite</p></td>
     </tr>
     </table>
 

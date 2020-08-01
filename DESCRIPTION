@@ -3,7 +3,7 @@ Title: CSS Animations for 'shiny' Elements
 Version: 0.1.1
 Authors@R: c(person("Tyler","Littlefield",email="tylerlittlefield@hey.com",role=c("aut","cre"),comment="Creator of Shiny Wrapper"),
              person("Vaibhav","Tandon",role=c("ctb","cph"),comment="Author of included CSS code"),
-             person("Huynhle","Danube",role=c("ctb")))
+             person("Danube", "Huynhle",role=c("ctb")))
 Description: A wrapper around a CSS library called 'vov.css', intended for use 
   in 'shiny' applications. Simply wrap a UI element in one of the animation 
   functions to see it move.

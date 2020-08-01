@@ -740,6 +740,62 @@ shake_horizontal <- function(ui, duration = NULL, delay = NULL, steps = NULL, it
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
+#' Shake diagonally
+#'
+#' @description Animation to shake a UI element diagonally.
+#'
+#' @eval vov_params()
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     shake_diagonally(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
+#' @export
+shake_diagonally <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("shake-diagonally", duration, delay, steps, iteration)
+  htmltools::tagAppendAttributes(ui, class = x)
+}
+
+#' Shake diagonally inverse
+#'
+#' @description Animation to shake a UI element diagonally.
+#'
+#' @eval vov_params()
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     shake_i_diagonally(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
+#' @export
+shake_i_diagonally <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("shake-i-diagonally", duration, delay, steps, iteration)
+  htmltools::tagAppendAttributes(ui, class = x)
+}
+
 #' Blur in
 #'
 #' @description Animation to blur in a UI element.
@@ -1328,3 +1384,282 @@ flash <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = N
   htmltools::tagAppendAttributes(ui, class = x)
 }
 
+#' Zoom in down
+#'
+#' @description Animation to zoom a UI element down.
+#'
+#' @eval vov_params()
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     zoom_in_down(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
+#' @export
+zoom_in_down <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("zoom-in-down", duration, delay, steps, iteration)
+  htmltools::tagAppendAttributes(ui, class = x)
+}
+
+#' Zoom in left
+#'
+#' @description Animation to zoom a UI element left.
+#'
+#' @eval vov_params()
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     zoom_in_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
+#' @export
+zoom_in_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("zoom-in-left", duration, delay, steps, iteration)
+  htmltools::tagAppendAttributes(ui, class = x)
+}
+
+#' Zoom in right
+#'
+#' @description Animation to zoom a UI element right.
+#'
+#' @eval vov_params()
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     zoom_in_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
+#' @export
+zoom_in_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("zoom-in-right", duration, delay, steps, iteration)
+  htmltools::tagAppendAttributes(ui, class = x)
+}
+
+#' Zoom in up
+#'
+#' @description Animation to zoom a UI element up.
+#'
+#' @eval vov_params()
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     zoom_in_up(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
+#' @export
+zoom_in_up <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("zoom-in-up", duration, delay, steps, iteration)
+  htmltools::tagAppendAttributes(ui, class = x)
+}
+
+#' Zoom in
+#'
+#' @description Animation to zoom a UI element.
+#'
+#' @eval vov_params()
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     zoom_in(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
+#' @export
+zoom_in <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("zoom-in", duration, delay, steps, iteration)
+  htmltools::tagAppendAttributes(ui, class = x)
+}
+
+#' Zoom out down
+#'
+#' @description Animation to zoom a UI element down.
+#'
+#' @eval vov_params()
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     zoom_out_down(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
+#' @export
+zoom_out_down <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("zoom-out-down", duration, delay, steps, iteration)
+  htmltools::tagAppendAttributes(ui, class = x)
+}
+
+#' Zoom out left
+#'
+#' @description Animation to zoom a UI element left.
+#'
+#' @eval vov_params()
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     zoom_out_left(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
+#' @export
+zoom_out_left <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("zoom-out-left", duration, delay, steps, iteration)
+  htmltools::tagAppendAttributes(ui, class = x)
+}
+
+#' Zoom out right
+#'
+#' @description Animation to zoom a UI element right.
+#'
+#' @eval vov_params()
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     zoom_out_right(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
+#' @export
+zoom_out_right <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("zoom-out-right", duration, delay, steps, iteration)
+  htmltools::tagAppendAttributes(ui, class = x)
+}
+
+#' Zoom out up
+#'
+#' @description Animation to zoom a UI element up.
+#'
+#' @eval vov_params()
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     zoom_out_up(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
+#' @export
+zoom_out_up <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("zoom-out-up", duration, delay, steps, iteration)
+  htmltools::tagAppendAttributes(ui, class = x)
+}
+
+#' Zoom out
+#'
+#' @description Animation to zoom a UI element.
+#'
+#' @eval vov_params()
+#'
+#' @examples
+#' if (interactive()) {
+#'   library(shiny)
+#'   library(vov)
+#'
+#'   ui <- fluidPage(
+#'     use_vov(),
+#'     zoom_out(
+#'       h1("Hello world!")
+#'     )
+#'   )
+#'
+#'   server <- function(input, output, session) {}
+#'
+#'   shinyApp(ui, server)
+#' }
+#' @export
+zoom_out <- function(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL) {
+  x <- parse_animation("zoom-out", duration, delay, steps, iteration)
+  htmltools::tagAppendAttributes(ui, class = x)
+}

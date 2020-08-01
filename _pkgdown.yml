@@ -9,15 +9,15 @@ reference:
   contents:
   - run_demo
   - use_vov
-- title: Fading Animations
+- title: Fade Animations
   desc: ~
   contents:
   - starts_with("fade")
-- title: Rolling Animations
+- title: Roll Animations
   desc: ~
   contents:
   - starts_with("roll")
-- title: Shaking Animations
+- title: Shake Animations
   desc: ~
   contents:
   - starts_with("shake")
@@ -25,11 +25,11 @@ reference:
   desc: ~
   contents:
   - starts_with("blur")
-- title: Sliding Animations
+- title: Slide Animations
   desc: ~
   contents:
   - starts_with("slide")
-- title: Throbing Animations
+- title: Throb Animations
   desc: ~
   contents:
   - contains("throb")
@@ -41,6 +41,10 @@ reference:
   desc: ~
   contents:
   - starts_with("wheel")
+- title: Zoom Animations
+  desc: ~
+  contents:
+  - starts_with("zoom")
 - title: Flash Animations
   desc: ~
   contents:

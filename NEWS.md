@@ -4,6 +4,7 @@
 * Added steps and iteration parameters.
 * Added warnings if params aren't given what they expect.
 * Updated documentation, added details sections, updated pkgdown reference.
+* Added new animations, `shake_i_diagonally`, `shake_diagonally`, and a whole family of zoom animations.
 
 # vov 0.1.1
 

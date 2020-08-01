@@ -1,4 +1,4 @@
-# vov 0.1.1
+# vov 0.1.0.9000
 
 * Fixed 1s animation delay ([#4](https://github.com/tyluRp/vov/pull/4)).
 

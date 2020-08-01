@@ -1,3 +1,11 @@
+vov_params <- function() {
+  c(
+    '@param ui A UI element',
+    '@param duration Duration of animation; Enter word: "fast" = 800 milliseconds, "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds, "slower" = 3 seconds, "slowest" = 4 seconds',
+    '@param delay Delay in seconds before animation starts; Enter value: 0 - 5'
+  )
+}
+
 #' Use the vov package
 #'
 #' @description Enables vov by including the CSS file necessary for the
@@ -42,11 +50,7 @@ run_demo <- function() {
 #'
 #' @description Animation to fade in a UI element from the bottom left.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -74,11 +78,7 @@ fade_in_bottom_left <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade in a UI element from the bottom right.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -106,11 +106,7 @@ fade_in_bottom_right <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade in a UI element downward.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -138,11 +134,7 @@ fade_in_down <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade in a UI element from the left.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -170,11 +162,7 @@ fade_in_left <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade in a UI element from the right.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -202,11 +190,7 @@ fade_in_right <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade in a UI element from the top left.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -234,11 +218,7 @@ fade_in_top_left <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade in a UI element from the top right.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -266,11 +246,7 @@ fade_in_top_right <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade in a UI element upward.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -298,11 +274,7 @@ fade_in_up <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade in a UI element.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -331,11 +303,7 @@ fade_in <- function(ui, duration = NULL, delay = NULL) {
 #' @description Animation to fade out (disappear) a UI element from the
 #' bottom left.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -364,11 +332,7 @@ fade_out_bottom_left <- function(ui, duration = NULL, delay = NULL) {
 #' @description Animation to fade out (disappear) a UI element from the
 #' bottom right
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -396,11 +360,7 @@ fade_out_bottom_right <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade out (disappear) a UI element downward.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -428,11 +388,7 @@ fade_out_down <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade out (disappear) a UI element from the left.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -460,11 +416,7 @@ fade_out_left <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade out (disappear) a UI element from the right.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -493,11 +445,7 @@ fade_out_right <- function(ui, duration = NULL, delay = NULL) {
 #' @description Animation to fade out (disappear) a UI element from the top
 #' left.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -526,11 +474,7 @@ fade_out_top_left <- function(ui, duration = NULL, delay = NULL) {
 #' @description Animation to fade out (disappear) a UI element from the top
 #' right.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -558,11 +502,7 @@ fade_out_top_right <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade out (disappear) a UI element upwards.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -590,11 +530,7 @@ fade_out_up <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to fade out (disappear) a UI element.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -622,11 +558,7 @@ fade_out <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to roll in a UI element from the left.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -654,11 +586,7 @@ roll_in_left <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to roll in a UI element from the right.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -686,11 +614,7 @@ roll_in_right <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to roll out (disappear) a UI element from the left.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -718,11 +642,7 @@ roll_out_left <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to roll out (disappear) a UI element from the right.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -750,11 +670,7 @@ roll_out_right <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to shake a UI element vertically.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -782,11 +698,7 @@ shake_vertical <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to shake a UI element horizontally.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -814,11 +726,7 @@ shake_horizontal <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to blur in a UI element.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -846,11 +754,7 @@ blur_in <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to blur out (disappear) a UI element.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -878,11 +782,7 @@ blur_out <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to slide in a UI element downward.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -910,11 +810,7 @@ slide_in_down <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to slide in a UI element from the left.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -942,11 +838,7 @@ slide_in_left <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to slide in a UI element from the right.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -974,11 +866,7 @@ slide_in_right <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to slide in a UI element upward.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1006,11 +894,7 @@ slide_in_up <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to slide in a UI element downward.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1038,11 +922,7 @@ slide_out_down <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to slide out (disappear) a UI element from the left.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1070,11 +950,7 @@ slide_out_left <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to slide out (disappear) a UI element from the right.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1102,11 +978,7 @@ slide_out_right <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to slide out (disappear) a UI element upward.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1134,11 +1006,7 @@ slide_out_up <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to throb a UI element outward.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1166,11 +1034,7 @@ throb <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to throb a UI element inward.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1198,11 +1062,7 @@ i_throb <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to swivel a UI element horizontally.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1230,11 +1090,7 @@ swivel_horizontal <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to swivel a UI element horizontally, twice.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1262,11 +1118,7 @@ swivel_horizontal_double <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to swivel a UI element vertically.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1294,11 +1146,7 @@ swivel_vertical <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to swivel a UI element vertically, twice.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1326,11 +1174,7 @@ swivel_vertical_double <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to wheel in a UI element from the left.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1358,11 +1202,7 @@ wheel_in_left <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to wheel in a UI element from the right.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1390,11 +1230,7 @@ wheel_in_right <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to wheel out (disappear) a UI element from the left.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1422,11 +1258,7 @@ wheel_out_left <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to wheel out (disappear) a UI element from the right.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {
@@ -1454,11 +1286,7 @@ wheel_out_right <- function(ui, duration = NULL, delay = NULL) {
 #'
 #' @description Animation to flash a UI element.
 #'
-#' @param ui A UI element
-#' @param duration Duration of animation; Enter word: "fast" = 800 milliseconds,
-#' "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds,
-#' "slower" = 3 seconds, "slowest" = 4 seconds
-#' @param delay Delay in seconds before animation starts; Enter value: 0 - 5
+#' @eval vov_params()
 #'
 #' @examples
 #' if (interactive()) {

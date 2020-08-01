@@ -5,10 +5,8 @@
 
 <!-- badges: start -->
 
-[![Travis build
-status](https://travis-ci.org/tyluRp/vov.svg?branch=master)](https://travis-ci.org/tyluRp/vov)
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/tyluRp/vov?branch=master&svg=true)](https://ci.appveyor.com/project/tyluRp/vov)
+[![R build
+status](https://github.com/tyluRp/vov/workflows/R-CMD-check/badge.svg)](https://github.com/tyluRp/vov/actions)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/vov)](https://cran.r-project.org/package=vov)
 [![CRAN\_Download\_Badge](https://cranlogs.r-pkg.org/badges/vov)](https://cran.r-project.org/package=vov)

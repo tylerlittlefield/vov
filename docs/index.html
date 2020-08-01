@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">vov</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1.9000</span>
       </span>
     </div>
 
@@ -107,9 +107,13 @@
 
 <span class="fu"><a href="https://rdrr.io/pkg/shiny/man/shinyApp.html">shinyApp</a></span>(<span class="no">ui</span>, <span class="no">server</span>)</pre></div>
 <p>Where <code><a href="reference/swivel_vertical.html">swivel_vertical(h1("fade_in_bottom_left"))</a></code> returns:</p>
-<div class="sourceCode" id="cb4"><pre class="r"><span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/swivel_vertical.html">swivel_vertical</a></span>(<span class="fu"><a href="https://rdrr.io/pkg/shiny/man/reexports.html">h1</a></span>(<span class="st">"hello world!"</span>))
-<span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span>(<span class="no">x</span>)
-<span class="co">#&gt; &lt;h1 class="vov swivel-vertical"&gt;hello world!&lt;/h1&gt;</span></pre></div>
+<div class="sourceCode" id="cb4"><pre class="r"><span class="fu"><a href="reference/swivel_vertical.html">swivel_vertical</a></span>(<span class="fu"><a href="https://rdrr.io/pkg/shiny/man/reexports.html">h1</a></span>(<span class="st">"hello world!"</span>))</pre></div>
+<!--html_preserve-->
+<h1 class="vov swivel-vertical">
+</h1>
+<p>hello world!</p>
+
+<!--/html_preserve-->
 <p>If you don’t want to load this package, go to the original repo <a href="https://github.com/vaibhav111tandon/vov.css">here</a>, download the CSS file, and write something like this in your UI code:</p>
 <div class="sourceCode" id="cb5"><pre class="r"><span class="fu"><a href="https://rdrr.io/pkg/shiny/man/reexports.html">includeCSS</a></span>(<span class="st">"www/vov.css"</span>)
 <span class="kw pkg">htmltools</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/htmltools/man/tag.html">tagAppendAttributes</a></span>(<span class="fu"><a href="https://rdrr.io/pkg/shiny/man/reexports.html">h1</a></span>(<span class="st">"hello world"</span>), <span class="kw">class</span> <span class="kw">=</span> <span class="st">"vov swivel-vertical"</span>)</pre></div>
@@ -148,8 +152,7 @@
   <div class="dev-status">
 <h2>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://travis-ci.org/tyluRp/vov"><img src="https://travis-ci.org/tyluRp/vov.svg?branch=master" alt="Travis build status"></a></li>
-<li><a href="https://ci.appveyor.com/project/tyluRp/vov"><img src="https://ci.appveyor.com/api/projects/status/github/tyluRp/vov?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
+<li><a href="https://github.com/tyluRp/vov/actions"><img src="https://github.com/tyluRp/vov/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
 <li><a href="https://cran.r-project.org/package=vov"><img src="https://www.r-pkg.org/badges/version/vov" alt="CRAN status"></a></li>
 <li><a href="https://cran.r-project.org/package=vov"><img src="https://cranlogs.r-pkg.org/badges/vov" alt="CRAN_Download_Badge"></a></li>
 <li><a href="https://codecov.io/gh/tyluRp/vov?branch=master"><img src="https://codecov.io/gh/tyluRp/vov/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>

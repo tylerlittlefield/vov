@@ -28,11 +28,11 @@ parse_duration <- function(duration) {
 
 parse_delay <- function(delay) {
   if (!is.null(delay)) {
-    if (!delay %in% c("1", "2", "3", "4", "5")) {
+    if (!delay %in% c("0", "1", "2", "3", "4", "5")) {
       warning(
         call. = FALSE,
         "You gave [", delay, "] but `delay` expects one of:",
-        paste("\n*", c("1", "2", "3", "4", "5")),
+        paste("\n*", c("0", "1", "2", "3", "4", "5")),
         "\n~ Defaulting to [NULL], no delay"
       )
 

@@ -9,7 +9,27 @@ null_transformer <- function(str = "NULL") {
   }
 }
 
+parse_duration <- function(duration) {
+  if (!is.null(duration)) {
+    if (!duration %in% c("fastest", "faster", "fast", "slow", "slower", "slowest")) {
+      warning(
+        call. = FALSE,
+        "You gave [", duration, "] but `duration` expects one of:",
+        paste("\n*", c("fastest", "faster", "fast", "slow", "slower", "slowest")),
+        "\n~ Defaulting to [fast]"
+      )
+
+      "fast"
+    } else {
+      duration
+    }
+  }
+}
+
 parse_animation <- function(class, duration, delay, steps, iteration) {
+
+  duration <- parse_duration(duration)
+
   if (!is.null(delay))
     delay <- glue::glue("t-{delay}")
 

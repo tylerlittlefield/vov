@@ -2,6 +2,7 @@
 This is a package update. A minor bug fix has been made.
 
 * Adds 1 second animation delay that was missing.
+* Fixed contributors name.
 
 ## Test environments
 * local R installation, R 4.0.2

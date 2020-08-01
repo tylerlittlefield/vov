@@ -9,9 +9,9 @@ roll_in_left(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL)
 \arguments{
 \item{ui}{A UI element}
 
-\item{duration}{Duration of animation; Enter word: "fast" = 800 milliseconds, "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds, "slower" = 3 seconds, "slowest" = 4 seconds}
+\item{duration}{Duration of animation}
 
-\item{delay}{Delay in seconds before animation starts; Enter value: 0 - 5}
+\item{delay}{Delay in seconds before animation starts}
 
 \item{steps}{Animation steps; Enter value: 10, 20, 30, 40, or 50}
 
@@ -19,6 +19,14 @@ roll_in_left(ui, duration = NULL, delay = NULL, steps = NULL, iteration = NULL)
 }
 \description{
 Animation to roll in a UI element from the left.
+}
+\details{
+\itemize{
+        \item Duration expects one of: "fast" = 800 milliseconds, "faster" = 500 milliseconds, "fastest" = 300 milliseconds, "slow" = 2 seconds, "slower" = 3 seconds, "slowest" = 4 seconds,
+        \item Delay expects one of: 1, 2, 3, 4, 5, no delay if left NULL
+        \item Steps expects one of: 10, 20, 30, 40, 50, no steps if left NULL
+        \item Iteration expects one of: 1, 2, 3, 4, 5, infinite, no iteration if left NULL
+      }
 }
 \examples{
 if (interactive()) {

@@ -94,10 +94,10 @@
 <div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">shiny</span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">vov</span>)
 
-<span class="no">ui</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/shiny/man/fluidPage.html">fluidPage</a></span>(
+<span class="no">ui</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/fluidPage.html">fluidPage</a></span>(
   <span class="fu"><a href="reference/use_vov.html">use_vov</a></span>(),
   <span class="fu"><a href="reference/swivel_vertical.html">swivel_vertical</a></span>(
-    <span class="fu"><a href="https://rdrr.io/pkg/shiny/man/reexports.html">h1</a></span>(<span class="st">"hello world!"</span>)
+    <span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/reexports.html">h1</a></span>(<span class="st">"hello world!"</span>)
   )
 )
 
@@ -105,14 +105,14 @@
 
 }
 
-<span class="fu"><a href="https://rdrr.io/pkg/shiny/man/shinyApp.html">shinyApp</a></span>(<span class="no">ui</span>, <span class="no">server</span>)</pre></div>
+<span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/shinyApp.html">shinyApp</a></span>(<span class="no">ui</span>, <span class="no">server</span>)</pre></div>
 <p>Where <code><a href="reference/swivel_vertical.html">swivel_vertical(h1("fade_in_bottom_left"))</a></code> returns:</p>
-<div class="sourceCode" id="cb4"><pre class="r"><span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/swivel_vertical.html">swivel_vertical</a></span>(<span class="fu"><a href="https://rdrr.io/pkg/shiny/man/reexports.html">h1</a></span>(<span class="st">"hello world!"</span>))
+<div class="sourceCode" id="cb4"><pre class="r"><span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/swivel_vertical.html">swivel_vertical</a></span>(<span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/reexports.html">h1</a></span>(<span class="st">"hello world!"</span>))
 <span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span>(<span class="no">x</span>)
 <span class="co">#&gt; &lt;h1 class="vov swivel-vertical"&gt;hello world!&lt;/h1&gt;</span></pre></div>
 <p>If you don’t want to load this package, go to the original repo <a href="https://github.com/vaibhav111tandon/vov.css">here</a>, download the CSS file, and write something like this in your UI code:</p>
-<div class="sourceCode" id="cb5"><pre class="r"><span class="fu"><a href="https://rdrr.io/pkg/shiny/man/reexports.html">includeCSS</a></span>(<span class="st">"www/vov.css"</span>)
-<span class="kw pkg">htmltools</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/htmltools/man/tag.html">tagAppendAttributes</a></span>(<span class="fu"><a href="https://rdrr.io/pkg/shiny/man/reexports.html">h1</a></span>(<span class="st">"hello world"</span>), <span class="kw">class</span> <span class="kw">=</span> <span class="st">"vov swivel-vertical"</span>)</pre></div>
+<div class="sourceCode" id="cb5"><pre class="r"><span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/reexports.html">includeCSS</a></span>(<span class="st">"www/vov.css"</span>)
+<span class="kw pkg">htmltools</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/htmltools/man/tag.html">tagAppendAttributes</a></span>(<span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/reexports.html">h1</a></span>(<span class="st">"hello world"</span>), <span class="kw">class</span> <span class="kw">=</span> <span class="st">"vov swivel-vertical"</span>)</pre></div>
 </div>
 </div>
   </div>

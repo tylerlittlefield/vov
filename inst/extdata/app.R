@@ -36,36 +36,45 @@ ui <- fluidPage(
       selectInput(
         inputId = "duration",
         label = "Duration",
-        choices = c("default", "fastest", "faster", "fast", "slow", "slower", "slowest"),
-        selected = "default"
+        choices = c("fastest", "faster", "fast", "slow", "slower", "slowest"),
+        selected = "fast"
       ),
-      numericInput(
+      selectInput(
+        inputId = "iteration",
+        label = "Iteration",
+        choices = c("1", "2", "3", "4", "5", "infinite"),
+        selected = "1"
+      ),
+      sliderInput(
         inputId = "delay",
         label = "Delay",
         value = 0,
         min = 0,
         max = 5
+      ),
+      sliderInput(
+        inputId = "steps",
+        label = "Steps",
+        value = 50,
+        min = 10,
+        max = 50,
+        step = 10
       )
     )
   )
-
 )
 
 server <- function(input, output, session) {
   output$text <- renderUI({
-
-    if (input$duration == "default")
-      duration <- ""
-    else
-      duration <- input$duration
-
     x <- list(h1("\U0001f44b Hello world!"))
 
     lapply(
       X = x,
       FUN = input$animation,
-      duration = duration,
-      delay = input$delay
+      duration = input$duration,
+      delay = input$delay,
+      steps = input$steps,
+      iteration = input$iteration
     )[[1]]
   })
 }

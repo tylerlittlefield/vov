@@ -1,10 +1,10 @@
-# vov 0.1.1.9000
+# vov 0.1.2
 
-* Fixed description file contributors.
 * Added steps and iteration parameters.
-* Added warnings if params aren't given what they expect.
+* Added warnings if parameters aren't given what they expect.
 * Updated documentation, added details sections, updated pkgdown reference.
 * Added new animations, `shake_i_diagonally`, `shake_diagonally`, and a whole family of zoom animations.
+* Updated demo application to include additional parameters (step, iteration).
 
 # vov 0.1.1
 

@@ -71,9 +71,10 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="vov" class="section level1">
+<div id="vov-" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#vov" class="anchor"></a>vov</h1></div>
+<a href="#vov-" class="anchor"></a>vov <img src="reference/figures/vov-logo.png" align="right" height="150/">
+</h1></div>
 <!-- badges: start -->
 
 <p>The goal of vov is to wrap <a href="https://github.com/vaibhav111tandon/vov.css">vov.css</a> into functions so they can be called on when developing a shiny application. Try out the demo <a href="https://tylerlittlefield.com/shiny/tyler/vov/">here</a> or check out the original <a href="https://vaibhav111tandon.github.io/vov.css/">here</a> by Vaibhav Tandon. Alternatively, you can run a local copy with <code><a href="reference/run_demo.html">vov::run_demo()</a></code>.</p>
@@ -82,37 +83,37 @@
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>Install the released version of <code>vov</code> from CRAN:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"vov"</span>)</pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">"vov"</span>)</span></code></pre></div>
 <p>Or install the development version from GitHub with:</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="co"># install.packages("devtools")</span>
-<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu">install_github</span>(<span class="st">"tylurp/vov"</span>)</pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># install.packages("devtools")</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"tylurp/vov"</span>)</span></code></pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h2>
 <p>You can use <code>vov</code> in a shiny app like so:</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">shiny</span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">vov</span>)
-
-<span class="no">ui</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/fluidPage.html">fluidPage</a></span>(
-  <span class="fu"><a href="reference/use_vov.html">use_vov</a></span>(),
-  <span class="fu"><a href="reference/swivel_vertical.html">swivel_vertical</a></span>(
-    <span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/reexports.html">h1</a></span>(<span class="st">"hello world!"</span>)
-  )
-)
-
-<span class="no">server</span> <span class="kw">&lt;-</span> <span class="kw">function</span>(<span class="no">input</span>, <span class="no">output</span>, <span class="no">session</span>) {
-
-}
-
-<span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/shinyApp.html">shinyApp</a></span>(<span class="no">ui</span>, <span class="no">server</span>)</pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">library</span>(shiny)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">library</span>(vov)</span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a>ui &lt;-<span class="st"> </span><span class="kw">fluidPage</span>(</span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="kw">use_vov</span>(),</span>
+<span id="cb3-6"><a href="#cb3-6"></a>  <span class="kw">swivel_vertical</span>(</span>
+<span id="cb3-7"><a href="#cb3-7"></a>    <span class="kw">h1</span>(<span class="st">"hello world!"</span>)</span>
+<span id="cb3-8"><a href="#cb3-8"></a>  )</span>
+<span id="cb3-9"><a href="#cb3-9"></a>)</span>
+<span id="cb3-10"><a href="#cb3-10"></a></span>
+<span id="cb3-11"><a href="#cb3-11"></a>server &lt;-<span class="st"> </span><span class="cf">function</span>(input, output, session) {</span>
+<span id="cb3-12"><a href="#cb3-12"></a></span>
+<span id="cb3-13"><a href="#cb3-13"></a>}</span>
+<span id="cb3-14"><a href="#cb3-14"></a></span>
+<span id="cb3-15"><a href="#cb3-15"></a><span class="kw">shinyApp</span>(ui, server)</span></code></pre></div>
 <p>Where <code><a href="reference/swivel_vertical.html">swivel_vertical(h1("fade_in_bottom_left"))</a></code> returns:</p>
-<div class="sourceCode" id="cb4"><pre class="r"><span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="reference/swivel_vertical.html">swivel_vertical</a></span>(<span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/reexports.html">h1</a></span>(<span class="st">"hello world!"</span>))
-<span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span>(<span class="no">x</span>)
-<span class="co">#&gt; &lt;h1 class="vov swivel-vertical"&gt;hello world!&lt;/h1&gt;</span></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>x &lt;-<span class="st"> </span><span class="kw">swivel_vertical</span>(<span class="kw">h1</span>(<span class="st">"hello world!"</span>))</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">print</span>(x)</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co">#&gt; &lt;h1 class="vov swivel-vertical"&gt;hello world!&lt;/h1&gt;</span></span></code></pre></div>
 <p>If you don’t want to load this package, go to the original repo <a href="https://github.com/vaibhav111tandon/vov.css">here</a>, download the CSS file, and write something like this in your UI code:</p>
-<div class="sourceCode" id="cb5"><pre class="r"><span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/reexports.html">includeCSS</a></span>(<span class="st">"www/vov.css"</span>)
-<span class="kw pkg">htmltools</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/htmltools/man/tag.html">tagAppendAttributes</a></span>(<span class="fu"><a href="https://shiny.rstudio.com/reference/shiny/latest/reexports.html">h1</a></span>(<span class="st">"hello world"</span>), <span class="kw">class</span> <span class="kw">=</span> <span class="st">"vov swivel-vertical"</span>)</pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">includeCSS</span>(<span class="st">"www/vov.css"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2"></a>htmltools<span class="op">::</span><span class="kw">tagAppendAttributes</span>(<span class="kw">h1</span>(<span class="st">"hello world"</span>), <span class="dt">class =</span> <span class="st">"vov swivel-vertical"</span>)</span></code></pre></div>
 </div>
 </div>
   </div>

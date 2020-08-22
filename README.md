@@ -1,7 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# vov
+vov <img src="man/figures/vov-logo.png" align="right" height=150/>
+==================================================================
 
 <!-- badges: start -->
 
@@ -24,56 +25,48 @@ Vaibhav Tandon. Alternatively, you can run a local copy with
 
 <img src="man/figures/README-demo.gif" width="100%" />
 
-## Installation
+Installation
+------------
 
 Install the released version of `vov` from CRAN:
 
-``` r
-install.packages("vov")
-```
+    install.packages("vov")
 
 Or install the development version from GitHub with:
 
-``` r
-# install.packages("devtools")
-devtools::install_github("tylurp/vov")
-```
+    # install.packages("devtools")
+    devtools::install_github("tylurp/vov")
 
-## Usage
+Usage
+-----
 
 You can use `vov` in a shiny app like so:
 
-``` r
-library(shiny)
-library(vov)
+    library(shiny)
+    library(vov)
 
-ui <- fluidPage(
-  use_vov(),
-  swivel_vertical(
-    h1("hello world!")
-  )
-)
+    ui <- fluidPage(
+      use_vov(),
+      swivel_vertical(
+        h1("hello world!")
+      )
+    )
 
-server <- function(input, output, session) {
+    server <- function(input, output, session) {
 
-}
+    }
 
-shinyApp(ui, server)
-```
+    shinyApp(ui, server)
 
 Where `swivel_vertical(h1("fade_in_bottom_left"))` returns:
 
-``` r
-x <- swivel_vertical(h1("hello world!"))
-print(x)
-#> <h1 class="vov swivel-vertical">hello world!</h1>
-```
+    x <- swivel_vertical(h1("hello world!"))
+    print(x)
+    #> <h1 class="vov swivel-vertical">hello world!</h1>
 
 If you don’t want to load this package, go to the original repo
 [here](https://github.com/vaibhav111tandon/vov.css), download the CSS
 file, and write something like this in your UI code:
 
-``` r
-includeCSS("www/vov.css")
-htmltools::tagAppendAttributes(h1("hello world"), class = "vov swivel-vertical")
-```
+    includeCSS("www/vov.css")
+    htmltools::tagAppendAttributes(h1("hello world"), class = "vov swivel-vertical")

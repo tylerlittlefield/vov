@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# vov
+# vov <img src="man/figures/vov-logo.png" align="right" height=150/>
 
 <!-- badges: start -->
 [![R build status](https://github.com/tyluRp/vov/workflows/R-CMD-check/badge.svg)](https://github.com/tyluRp/vov/actions)
